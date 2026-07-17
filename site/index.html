@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NY Numbers Pick 3 prediction engine with brutally honest tracking — every pick locked pre-draw, graded against a random control.">
+<title>Pick 3 Oracle — NY Numbers</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%B1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1>Pick 3 Oracle <span class="dim">— NY Numbers</span></h1>
+      <div class="sub">Locked pre-draw · graded honestly · <span id="updated-at">loading…</span></div>
+    </div>
+    <div class="countdown">
+      <div class="label">Next draw</div>
+      <div class="which" id="next-draw-label">—</div>
+      <div class="clock" id="countdown-clock">--:--:--</div>
+    </div>
+  </header>
+
+  <div id="load-error" hidden>Failed to load dashboard data. The pipeline may not have published yet — try a refresh.</div>
+
+  <!-- 2. NOW panel -->
+  <section class="panel" id="now-panel">
+    <h2>Now playing</h2>
+    <div class="now-draw-label" id="now-draw-label"></div>
+    <div class="now-grid">
+      <div class="now-picks">
+        <div class="pick-row" id="pick-row"></div>
+        <div class="pairs-line" id="pairs-line"></div>
+      </div>
+      <div class="now-meta">
+        <div class="lock-line" id="lock-line"></div>
+        <div class="tactics-line" id="tactics-line"></div>
+        <div class="community-line" id="community-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. HONESTY banner -->
+  <aside class="honesty">
+    <strong>Reality check:</strong> Straight odds are 1/1000 and pay 500:1 — every Pick 3 bet has a
+    ~50% house edge. Expected loss at $5/day: <strong>$2.50/day</strong>. This tracker measures
+    honestly; no system beats independent draws.
+  </aside>
+
+  <!-- 4. SCOREBOARD -->
+  <section class="panel">
+    <h2>Live scoreboard</h2>
+    <div class="score-grid" id="score-grid"></div>
+  </section>
+
+  <!-- 5. P&L -->
+  <section class="panel">
+    <h2>Cumulative P&amp;L <span class="h2-extra" id="pnl-headline"></span></h2>
+    <div class="pnl-legend" id="pnl-legend"></div>
+    <div id="pnl-chart"></div>
+    <div class="chart-note">Faint lines = backtest replay · solid lines = live locked picks. Each structure stakes $2.50/draw. Click legend items to toggle.</div>
+    <div class="table-wrap">
+      <table id="pnl-summary">
+        <thead><tr>
+          <th>Structure</th><th class="num">Stake</th><th class="num">Won</th><th class="num">Net</th>
+          <th class="num">ROI</th><th class="num">Win rate</th><th class="num">Max losing streak</th><th class="num">Max drawdown</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 6. LEDGER -->
+  <section class="panel">
+    <h2>Prediction ledger <span class="h2-extra" id="ledger-count"></span></h2>
+    <div class="table-wrap">
+      <table id="ledger-table">
+        <thead><tr>
+          <th>Draw</th><th></th><th>Picks (top first)</th><th>Result</th><th>Hits</th><th>Won</th><th>Lock</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <button id="ledger-more" hidden>Load 50 more</button>
+  </section>
+
+  <!-- 7. CHARTS -->
+  <section class="panel">
+    <h2>Draw analytics <span class="h2-extra" id="charts-window"></span></h2>
+    <div class="charts-grid">
+      <div class="chart-card wide">
+        <h3>Positional digit frequency</h3>
+        <div class="sub">Bars = appearances per digit in each position; dashed line = the 10% expectation.</div>
+        <div class="freq-row" id="chart-posfreq"></div>
+      </div>
+      <div class="chart-card">
+        <h3>Digit skips (any position)</h3>
+        <div class="sub">Bar = draws since the digit last appeared; gold tick = its historical median gap.</div>
+        <div id="chart-skips"></div>
+      </div>
+      <div class="chart-card">
+        <h3>Pair skip heatmap</h3>
+        <div class="sub">Draws since each positional pair last hit — bright gold = just hit.</div>
+        <div class="tabs" id="pairs-tabs"></div>
+        <div id="chart-pairs"></div>
+        <div class="heat-scale"><span>0</span><span class="bar"></span><span id="pairs-max-label"></span><span>draws out</span></div>
+      </div>
+      <div class="chart-card">
+        <h3>VTRAC tracker</h3>
+        <div class="sub">Positional vtrac skips and 30-draw frequency (v = digit &amp; its mirror).</div>
+        <div class="vtrac-flex">
+          <div class="vtrac-block"><div class="cap">Skips</div><div id="chart-vtrac-skips"></div></div>
+          <div class="vtrac-block"><div class="cap">Freq (30)</div><div id="chart-vtrac-freq"></div></div>
+        </div>
+        <div class="vtrac-last" id="vtrac-last"></div>
+      </div>
+      <div class="chart-card wide">
+        <h3>Sum distribution</h3>
+        <div class="sub">Observed digit-sum counts vs the exact theoretical curve (peak 7.5% at sums 13–14).</div>
+        <div id="chart-sums"></div>
+      </div>
+      <div class="chart-card">
+        <h3>Structure mix</h3>
+        <div class="sub">Singles / doubles / triples vs the exact 72 / 27 / 1 split.</div>
+        <div class="donut-flex">
+          <div id="chart-structure"></div>
+          <div class="donut-legend" id="structure-legend"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. TACTICS -->
+  <section class="panel">
+    <h2>Tactic leaderboard <span class="h2-extra" id="tactics-params"></span></h2>
+    <div class="tactic-head"><span>#</span><span>Tactic</span><span>EWMA vs 0.5</span><span style="text-align:right">Weight</span><span>Last 60 rewards</span></div>
+    <div id="tactic-rows"></div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer>
+    <h4>Methodology</h4>
+    <p>
+      An ensemble of 19 folk Pick&nbsp;3 workouts (VTRACs, rundowns, TTT grids, due pairs, followers,
+      sum filters…) scores all 1,000 straight combos, rank-votes them Borda-style, and the vote is
+      weighted by each tactic's exponentially-decayed trailing performance. The top 5 picks are
+      committed to git <em>before</em> each draw (the lock sha is the proof), then graded against the
+      official NY result — side-by-side with 5 random picks as a control. Backtests are labeled as
+      backtests. Losses are shown in red, on purpose.
+    </p>
+    <h4>Raw data</h4>
+    <p class="raw-links">
+      <a href="data/draws.json">draws.json</a>
+      <a href="data/prediction.json">prediction.json</a>
+      <a href="data/ledger.json">ledger.json</a>
+      <a href="data/weights.json">weights.json</a>
+      <a href="data/stats.json">stats.json</a>
+    </p>
+    <p class="fine">
+      Not affiliated with the New York Lottery. Entertainment only — this is a statistics project,
+      not betting advice. Every draw is independent; expected value is negative. Play responsibly.
+      Problem gambling help: call or text 1-800-GAMBLER.
+    </p>
+  </footer>
+
+</div>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

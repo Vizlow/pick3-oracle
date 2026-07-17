@@ -1,0 +1,33 @@
+name: reconcile
+on:
+  schedule:
+    - cron: '45 10 * * *'   # 6:45 AM EDT / 5:45 AM EST — after Socrata's ~5:01 AM ET refresh
+  workflow_dispatch: {}
+concurrency:
+  group: pick3-state
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - name: Run reconcile pipeline
+        run: python3 -m engine.pipeline reconcile --days 7
+      - name: Run tests
+        run: |
+          python3 -m pip install pytest -q
+          CI=1 python3 -m pytest -q
+      - name: Commit state
+        run: |
+          git config user.name  "pick3-oracle-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/data data
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "reconcile: $(date -u +%F)"
+          git pull --rebase origin main
+          git push

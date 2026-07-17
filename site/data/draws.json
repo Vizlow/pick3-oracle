@@ -1,0 +1,5205 @@
+{
+ "updated_at": "2026-07-17T05:45:39Z",
+ "draws": [
+  {
+   "id": "2025-12-29-mid",
+   "date": "2025-12-29",
+   "period": "mid",
+   "digits": [
+    3,
+    2,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2025-12-29-eve",
+   "date": "2025-12-29",
+   "period": "eve",
+   "digits": [
+    1,
+    9,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2025-12-30-mid",
+   "date": "2025-12-30",
+   "period": "mid",
+   "digits": [
+    0,
+    5,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2025-12-30-eve",
+   "date": "2025-12-30",
+   "period": "eve",
+   "digits": [
+    1,
+    3,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2025-12-31-mid",
+   "date": "2025-12-31",
+   "period": "mid",
+   "digits": [
+    4,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2025-12-31-eve",
+   "date": "2025-12-31",
+   "period": "eve",
+   "digits": [
+    1,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-01-mid",
+   "date": "2026-01-01",
+   "period": "mid",
+   "digits": [
+    1,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-01-eve",
+   "date": "2026-01-01",
+   "period": "eve",
+   "digits": [
+    1,
+    7,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-02-mid",
+   "date": "2026-01-02",
+   "period": "mid",
+   "digits": [
+    9,
+    9,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-02-eve",
+   "date": "2026-01-02",
+   "period": "eve",
+   "digits": [
+    2,
+    5,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-03-mid",
+   "date": "2026-01-03",
+   "period": "mid",
+   "digits": [
+    2,
+    4,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-03-eve",
+   "date": "2026-01-03",
+   "period": "eve",
+   "digits": [
+    6,
+    7,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-04-mid",
+   "date": "2026-01-04",
+   "period": "mid",
+   "digits": [
+    7,
+    9,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-04-eve",
+   "date": "2026-01-04",
+   "period": "eve",
+   "digits": [
+    4,
+    8,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-05-mid",
+   "date": "2026-01-05",
+   "period": "mid",
+   "digits": [
+    0,
+    8,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-05-eve",
+   "date": "2026-01-05",
+   "period": "eve",
+   "digits": [
+    7,
+    3,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-06-mid",
+   "date": "2026-01-06",
+   "period": "mid",
+   "digits": [
+    1,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-06-eve",
+   "date": "2026-01-06",
+   "period": "eve",
+   "digits": [
+    3,
+    4,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-07-mid",
+   "date": "2026-01-07",
+   "period": "mid",
+   "digits": [
+    9,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-07-eve",
+   "date": "2026-01-07",
+   "period": "eve",
+   "digits": [
+    2,
+    8,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-08-mid",
+   "date": "2026-01-08",
+   "period": "mid",
+   "digits": [
+    1,
+    9,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-08-eve",
+   "date": "2026-01-08",
+   "period": "eve",
+   "digits": [
+    7,
+    3,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-09-mid",
+   "date": "2026-01-09",
+   "period": "mid",
+   "digits": [
+    9,
+    8,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-09-eve",
+   "date": "2026-01-09",
+   "period": "eve",
+   "digits": [
+    8,
+    3,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-10-mid",
+   "date": "2026-01-10",
+   "period": "mid",
+   "digits": [
+    0,
+    5,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-10-eve",
+   "date": "2026-01-10",
+   "period": "eve",
+   "digits": [
+    4,
+    5,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-11-mid",
+   "date": "2026-01-11",
+   "period": "mid",
+   "digits": [
+    9,
+    9,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-11-eve",
+   "date": "2026-01-11",
+   "period": "eve",
+   "digits": [
+    0,
+    9,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-12-mid",
+   "date": "2026-01-12",
+   "period": "mid",
+   "digits": [
+    9,
+    2,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-12-eve",
+   "date": "2026-01-12",
+   "period": "eve",
+   "digits": [
+    5,
+    8,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-13-mid",
+   "date": "2026-01-13",
+   "period": "mid",
+   "digits": [
+    0,
+    0,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-13-eve",
+   "date": "2026-01-13",
+   "period": "eve",
+   "digits": [
+    0,
+    1,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-14-mid",
+   "date": "2026-01-14",
+   "period": "mid",
+   "digits": [
+    5,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-14-eve",
+   "date": "2026-01-14",
+   "period": "eve",
+   "digits": [
+    4,
+    0,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-15-mid",
+   "date": "2026-01-15",
+   "period": "mid",
+   "digits": [
+    9,
+    0,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-15-eve",
+   "date": "2026-01-15",
+   "period": "eve",
+   "digits": [
+    6,
+    8,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-16-mid",
+   "date": "2026-01-16",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-16-eve",
+   "date": "2026-01-16",
+   "period": "eve",
+   "digits": [
+    4,
+    9,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-17-mid",
+   "date": "2026-01-17",
+   "period": "mid",
+   "digits": [
+    9,
+    0,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-17-eve",
+   "date": "2026-01-17",
+   "period": "eve",
+   "digits": [
+    2,
+    8,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-18-mid",
+   "date": "2026-01-18",
+   "period": "mid",
+   "digits": [
+    6,
+    8,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-18-eve",
+   "date": "2026-01-18",
+   "period": "eve",
+   "digits": [
+    0,
+    9,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-19-mid",
+   "date": "2026-01-19",
+   "period": "mid",
+   "digits": [
+    7,
+    6,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-19-eve",
+   "date": "2026-01-19",
+   "period": "eve",
+   "digits": [
+    4,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-20-mid",
+   "date": "2026-01-20",
+   "period": "mid",
+   "digits": [
+    4,
+    7,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-20-eve",
+   "date": "2026-01-20",
+   "period": "eve",
+   "digits": [
+    4,
+    0,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-21-mid",
+   "date": "2026-01-21",
+   "period": "mid",
+   "digits": [
+    6,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-21-eve",
+   "date": "2026-01-21",
+   "period": "eve",
+   "digits": [
+    2,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-22-mid",
+   "date": "2026-01-22",
+   "period": "mid",
+   "digits": [
+    9,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-22-eve",
+   "date": "2026-01-22",
+   "period": "eve",
+   "digits": [
+    7,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-23-mid",
+   "date": "2026-01-23",
+   "period": "mid",
+   "digits": [
+    3,
+    8,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-23-eve",
+   "date": "2026-01-23",
+   "period": "eve",
+   "digits": [
+    7,
+    7,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-24-mid",
+   "date": "2026-01-24",
+   "period": "mid",
+   "digits": [
+    7,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-24-eve",
+   "date": "2026-01-24",
+   "period": "eve",
+   "digits": [
+    5,
+    5,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-25-mid",
+   "date": "2026-01-25",
+   "period": "mid",
+   "digits": [
+    9,
+    7,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-25-eve",
+   "date": "2026-01-25",
+   "period": "eve",
+   "digits": [
+    1,
+    8,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-26-mid",
+   "date": "2026-01-26",
+   "period": "mid",
+   "digits": [
+    0,
+    7,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-26-eve",
+   "date": "2026-01-26",
+   "period": "eve",
+   "digits": [
+    8,
+    6,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-27-mid",
+   "date": "2026-01-27",
+   "period": "mid",
+   "digits": [
+    5,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-27-eve",
+   "date": "2026-01-27",
+   "period": "eve",
+   "digits": [
+    0,
+    6,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-28-mid",
+   "date": "2026-01-28",
+   "period": "mid",
+   "digits": [
+    0,
+    9,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-28-eve",
+   "date": "2026-01-28",
+   "period": "eve",
+   "digits": [
+    7,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-29-mid",
+   "date": "2026-01-29",
+   "period": "mid",
+   "digits": [
+    1,
+    5,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-29-eve",
+   "date": "2026-01-29",
+   "period": "eve",
+   "digits": [
+    5,
+    9,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-30-mid",
+   "date": "2026-01-30",
+   "period": "mid",
+   "digits": [
+    1,
+    2,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-30-eve",
+   "date": "2026-01-30",
+   "period": "eve",
+   "digits": [
+    4,
+    1,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-31-mid",
+   "date": "2026-01-31",
+   "period": "mid",
+   "digits": [
+    1,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-01-31-eve",
+   "date": "2026-01-31",
+   "period": "eve",
+   "digits": [
+    7,
+    3,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-01-mid",
+   "date": "2026-02-01",
+   "period": "mid",
+   "digits": [
+    8,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-01-eve",
+   "date": "2026-02-01",
+   "period": "eve",
+   "digits": [
+    0,
+    6,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-02-mid",
+   "date": "2026-02-02",
+   "period": "mid",
+   "digits": [
+    4,
+    7,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-02-eve",
+   "date": "2026-02-02",
+   "period": "eve",
+   "digits": [
+    9,
+    4,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-03-mid",
+   "date": "2026-02-03",
+   "period": "mid",
+   "digits": [
+    8,
+    1,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-03-eve",
+   "date": "2026-02-03",
+   "period": "eve",
+   "digits": [
+    3,
+    7,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-04-mid",
+   "date": "2026-02-04",
+   "period": "mid",
+   "digits": [
+    0,
+    2,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-04-eve",
+   "date": "2026-02-04",
+   "period": "eve",
+   "digits": [
+    5,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-05-mid",
+   "date": "2026-02-05",
+   "period": "mid",
+   "digits": [
+    4,
+    8,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-05-eve",
+   "date": "2026-02-05",
+   "period": "eve",
+   "digits": [
+    7,
+    5,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-06-mid",
+   "date": "2026-02-06",
+   "period": "mid",
+   "digits": [
+    1,
+    6,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-06-eve",
+   "date": "2026-02-06",
+   "period": "eve",
+   "digits": [
+    5,
+    9,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-07-mid",
+   "date": "2026-02-07",
+   "period": "mid",
+   "digits": [
+    7,
+    4,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-07-eve",
+   "date": "2026-02-07",
+   "period": "eve",
+   "digits": [
+    9,
+    8,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-08-mid",
+   "date": "2026-02-08",
+   "period": "mid",
+   "digits": [
+    4,
+    8,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-08-eve",
+   "date": "2026-02-08",
+   "period": "eve",
+   "digits": [
+    7,
+    3,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-09-mid",
+   "date": "2026-02-09",
+   "period": "mid",
+   "digits": [
+    6,
+    4,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-09-eve",
+   "date": "2026-02-09",
+   "period": "eve",
+   "digits": [
+    3,
+    9,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-10-mid",
+   "date": "2026-02-10",
+   "period": "mid",
+   "digits": [
+    0,
+    7,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-10-eve",
+   "date": "2026-02-10",
+   "period": "eve",
+   "digits": [
+    5,
+    7,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-11-mid",
+   "date": "2026-02-11",
+   "period": "mid",
+   "digits": [
+    1,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-11-eve",
+   "date": "2026-02-11",
+   "period": "eve",
+   "digits": [
+    9,
+    0,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-12-mid",
+   "date": "2026-02-12",
+   "period": "mid",
+   "digits": [
+    8,
+    6,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-12-eve",
+   "date": "2026-02-12",
+   "period": "eve",
+   "digits": [
+    6,
+    3,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-13-mid",
+   "date": "2026-02-13",
+   "period": "mid",
+   "digits": [
+    1,
+    2,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-13-eve",
+   "date": "2026-02-13",
+   "period": "eve",
+   "digits": [
+    1,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-14-mid",
+   "date": "2026-02-14",
+   "period": "mid",
+   "digits": [
+    9,
+    4,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-14-eve",
+   "date": "2026-02-14",
+   "period": "eve",
+   "digits": [
+    5,
+    4,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-15-mid",
+   "date": "2026-02-15",
+   "period": "mid",
+   "digits": [
+    6,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-15-eve",
+   "date": "2026-02-15",
+   "period": "eve",
+   "digits": [
+    7,
+    5,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-16-mid",
+   "date": "2026-02-16",
+   "period": "mid",
+   "digits": [
+    4,
+    2,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-16-eve",
+   "date": "2026-02-16",
+   "period": "eve",
+   "digits": [
+    2,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-17-mid",
+   "date": "2026-02-17",
+   "period": "mid",
+   "digits": [
+    5,
+    7,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-17-eve",
+   "date": "2026-02-17",
+   "period": "eve",
+   "digits": [
+    2,
+    3,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-18-mid",
+   "date": "2026-02-18",
+   "period": "mid",
+   "digits": [
+    9,
+    5,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-18-eve",
+   "date": "2026-02-18",
+   "period": "eve",
+   "digits": [
+    4,
+    2,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-19-mid",
+   "date": "2026-02-19",
+   "period": "mid",
+   "digits": [
+    5,
+    0,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-19-eve",
+   "date": "2026-02-19",
+   "period": "eve",
+   "digits": [
+    7,
+    6,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-20-mid",
+   "date": "2026-02-20",
+   "period": "mid",
+   "digits": [
+    4,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-20-eve",
+   "date": "2026-02-20",
+   "period": "eve",
+   "digits": [
+    3,
+    3,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-21-mid",
+   "date": "2026-02-21",
+   "period": "mid",
+   "digits": [
+    7,
+    0,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-21-eve",
+   "date": "2026-02-21",
+   "period": "eve",
+   "digits": [
+    9,
+    5,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-22-mid",
+   "date": "2026-02-22",
+   "period": "mid",
+   "digits": [
+    6,
+    5,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-22-eve",
+   "date": "2026-02-22",
+   "period": "eve",
+   "digits": [
+    0,
+    5,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-23-mid",
+   "date": "2026-02-23",
+   "period": "mid",
+   "digits": [
+    4,
+    2,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-23-eve",
+   "date": "2026-02-23",
+   "period": "eve",
+   "digits": [
+    1,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-24-mid",
+   "date": "2026-02-24",
+   "period": "mid",
+   "digits": [
+    5,
+    8,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-24-eve",
+   "date": "2026-02-24",
+   "period": "eve",
+   "digits": [
+    9,
+    0,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-25-mid",
+   "date": "2026-02-25",
+   "period": "mid",
+   "digits": [
+    9,
+    9,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-25-eve",
+   "date": "2026-02-25",
+   "period": "eve",
+   "digits": [
+    5,
+    6,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-26-mid",
+   "date": "2026-02-26",
+   "period": "mid",
+   "digits": [
+    9,
+    2,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-26-eve",
+   "date": "2026-02-26",
+   "period": "eve",
+   "digits": [
+    7,
+    2,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-27-mid",
+   "date": "2026-02-27",
+   "period": "mid",
+   "digits": [
+    2,
+    6,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-27-eve",
+   "date": "2026-02-27",
+   "period": "eve",
+   "digits": [
+    4,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-28-mid",
+   "date": "2026-02-28",
+   "period": "mid",
+   "digits": [
+    3,
+    6,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-02-28-eve",
+   "date": "2026-02-28",
+   "period": "eve",
+   "digits": [
+    7,
+    2,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-01-mid",
+   "date": "2026-03-01",
+   "period": "mid",
+   "digits": [
+    1,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-01-eve",
+   "date": "2026-03-01",
+   "period": "eve",
+   "digits": [
+    0,
+    8,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-02-mid",
+   "date": "2026-03-02",
+   "period": "mid",
+   "digits": [
+    5,
+    4,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-02-eve",
+   "date": "2026-03-02",
+   "period": "eve",
+   "digits": [
+    9,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-03-mid",
+   "date": "2026-03-03",
+   "period": "mid",
+   "digits": [
+    6,
+    3,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-03-eve",
+   "date": "2026-03-03",
+   "period": "eve",
+   "digits": [
+    0,
+    9,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-04-mid",
+   "date": "2026-03-04",
+   "period": "mid",
+   "digits": [
+    3,
+    1,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-04-eve",
+   "date": "2026-03-04",
+   "period": "eve",
+   "digits": [
+    2,
+    7,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-05-mid",
+   "date": "2026-03-05",
+   "period": "mid",
+   "digits": [
+    1,
+    2,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-05-eve",
+   "date": "2026-03-05",
+   "period": "eve",
+   "digits": [
+    4,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-06-mid",
+   "date": "2026-03-06",
+   "period": "mid",
+   "digits": [
+    1,
+    3,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-06-eve",
+   "date": "2026-03-06",
+   "period": "eve",
+   "digits": [
+    0,
+    5,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-07-mid",
+   "date": "2026-03-07",
+   "period": "mid",
+   "digits": [
+    0,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-07-eve",
+   "date": "2026-03-07",
+   "period": "eve",
+   "digits": [
+    6,
+    5,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-08-mid",
+   "date": "2026-03-08",
+   "period": "mid",
+   "digits": [
+    1,
+    0,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-08-eve",
+   "date": "2026-03-08",
+   "period": "eve",
+   "digits": [
+    1,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-09-mid",
+   "date": "2026-03-09",
+   "period": "mid",
+   "digits": [
+    9,
+    0,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-09-eve",
+   "date": "2026-03-09",
+   "period": "eve",
+   "digits": [
+    2,
+    9,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-10-mid",
+   "date": "2026-03-10",
+   "period": "mid",
+   "digits": [
+    1,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-10-eve",
+   "date": "2026-03-10",
+   "period": "eve",
+   "digits": [
+    0,
+    8,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-11-mid",
+   "date": "2026-03-11",
+   "period": "mid",
+   "digits": [
+    3,
+    7,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-11-eve",
+   "date": "2026-03-11",
+   "period": "eve",
+   "digits": [
+    1,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-12-mid",
+   "date": "2026-03-12",
+   "period": "mid",
+   "digits": [
+    3,
+    5,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-12-eve",
+   "date": "2026-03-12",
+   "period": "eve",
+   "digits": [
+    8,
+    6,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-13-mid",
+   "date": "2026-03-13",
+   "period": "mid",
+   "digits": [
+    3,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-13-eve",
+   "date": "2026-03-13",
+   "period": "eve",
+   "digits": [
+    9,
+    8,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-14-mid",
+   "date": "2026-03-14",
+   "period": "mid",
+   "digits": [
+    4,
+    9,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-14-eve",
+   "date": "2026-03-14",
+   "period": "eve",
+   "digits": [
+    7,
+    2,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-15-mid",
+   "date": "2026-03-15",
+   "period": "mid",
+   "digits": [
+    8,
+    1,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-15-eve",
+   "date": "2026-03-15",
+   "period": "eve",
+   "digits": [
+    8,
+    0,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-16-mid",
+   "date": "2026-03-16",
+   "period": "mid",
+   "digits": [
+    1,
+    5,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-16-eve",
+   "date": "2026-03-16",
+   "period": "eve",
+   "digits": [
+    7,
+    9,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-17-mid",
+   "date": "2026-03-17",
+   "period": "mid",
+   "digits": [
+    8,
+    2,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-17-eve",
+   "date": "2026-03-17",
+   "period": "eve",
+   "digits": [
+    7,
+    4,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-18-mid",
+   "date": "2026-03-18",
+   "period": "mid",
+   "digits": [
+    5,
+    7,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-18-eve",
+   "date": "2026-03-18",
+   "period": "eve",
+   "digits": [
+    2,
+    9,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-19-mid",
+   "date": "2026-03-19",
+   "period": "mid",
+   "digits": [
+    3,
+    0,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-19-eve",
+   "date": "2026-03-19",
+   "period": "eve",
+   "digits": [
+    0,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-20-mid",
+   "date": "2026-03-20",
+   "period": "mid",
+   "digits": [
+    4,
+    0,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-20-eve",
+   "date": "2026-03-20",
+   "period": "eve",
+   "digits": [
+    0,
+    5,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-21-mid",
+   "date": "2026-03-21",
+   "period": "mid",
+   "digits": [
+    2,
+    7,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-21-eve",
+   "date": "2026-03-21",
+   "period": "eve",
+   "digits": [
+    8,
+    9,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-22-mid",
+   "date": "2026-03-22",
+   "period": "mid",
+   "digits": [
+    8,
+    9,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-22-eve",
+   "date": "2026-03-22",
+   "period": "eve",
+   "digits": [
+    6,
+    1,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-23-mid",
+   "date": "2026-03-23",
+   "period": "mid",
+   "digits": [
+    9,
+    3,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-23-eve",
+   "date": "2026-03-23",
+   "period": "eve",
+   "digits": [
+    4,
+    0,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-24-mid",
+   "date": "2026-03-24",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-24-eve",
+   "date": "2026-03-24",
+   "period": "eve",
+   "digits": [
+    1,
+    5,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-25-mid",
+   "date": "2026-03-25",
+   "period": "mid",
+   "digits": [
+    5,
+    7,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-25-eve",
+   "date": "2026-03-25",
+   "period": "eve",
+   "digits": [
+    6,
+    7,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-26-mid",
+   "date": "2026-03-26",
+   "period": "mid",
+   "digits": [
+    9,
+    0,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-26-eve",
+   "date": "2026-03-26",
+   "period": "eve",
+   "digits": [
+    4,
+    7,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-27-mid",
+   "date": "2026-03-27",
+   "period": "mid",
+   "digits": [
+    7,
+    9,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-27-eve",
+   "date": "2026-03-27",
+   "period": "eve",
+   "digits": [
+    4,
+    6,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-28-mid",
+   "date": "2026-03-28",
+   "period": "mid",
+   "digits": [
+    5,
+    6,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-28-eve",
+   "date": "2026-03-28",
+   "period": "eve",
+   "digits": [
+    6,
+    9,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-29-mid",
+   "date": "2026-03-29",
+   "period": "mid",
+   "digits": [
+    3,
+    0,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-29-eve",
+   "date": "2026-03-29",
+   "period": "eve",
+   "digits": [
+    5,
+    0,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-30-mid",
+   "date": "2026-03-30",
+   "period": "mid",
+   "digits": [
+    0,
+    9,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-30-eve",
+   "date": "2026-03-30",
+   "period": "eve",
+   "digits": [
+    2,
+    4,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-31-mid",
+   "date": "2026-03-31",
+   "period": "mid",
+   "digits": [
+    5,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-03-31-eve",
+   "date": "2026-03-31",
+   "period": "eve",
+   "digits": [
+    8,
+    9,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-01-mid",
+   "date": "2026-04-01",
+   "period": "mid",
+   "digits": [
+    0,
+    1,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-01-eve",
+   "date": "2026-04-01",
+   "period": "eve",
+   "digits": [
+    8,
+    2,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-02-mid",
+   "date": "2026-04-02",
+   "period": "mid",
+   "digits": [
+    8,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-02-eve",
+   "date": "2026-04-02",
+   "period": "eve",
+   "digits": [
+    7,
+    4,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-03-mid",
+   "date": "2026-04-03",
+   "period": "mid",
+   "digits": [
+    9,
+    5,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-03-eve",
+   "date": "2026-04-03",
+   "period": "eve",
+   "digits": [
+    1,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-04-mid",
+   "date": "2026-04-04",
+   "period": "mid",
+   "digits": [
+    1,
+    6,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-04-eve",
+   "date": "2026-04-04",
+   "period": "eve",
+   "digits": [
+    2,
+    9,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-05-mid",
+   "date": "2026-04-05",
+   "period": "mid",
+   "digits": [
+    0,
+    9,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-05-eve",
+   "date": "2026-04-05",
+   "period": "eve",
+   "digits": [
+    8,
+    3,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-06-mid",
+   "date": "2026-04-06",
+   "period": "mid",
+   "digits": [
+    2,
+    3,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-06-eve",
+   "date": "2026-04-06",
+   "period": "eve",
+   "digits": [
+    5,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-07-mid",
+   "date": "2026-04-07",
+   "period": "mid",
+   "digits": [
+    2,
+    7,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-07-eve",
+   "date": "2026-04-07",
+   "period": "eve",
+   "digits": [
+    2,
+    3,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-08-mid",
+   "date": "2026-04-08",
+   "period": "mid",
+   "digits": [
+    1,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-08-eve",
+   "date": "2026-04-08",
+   "period": "eve",
+   "digits": [
+    7,
+    3,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-09-mid",
+   "date": "2026-04-09",
+   "period": "mid",
+   "digits": [
+    3,
+    6,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-09-eve",
+   "date": "2026-04-09",
+   "period": "eve",
+   "digits": [
+    1,
+    3,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-10-mid",
+   "date": "2026-04-10",
+   "period": "mid",
+   "digits": [
+    4,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-10-eve",
+   "date": "2026-04-10",
+   "period": "eve",
+   "digits": [
+    7,
+    8,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-11-mid",
+   "date": "2026-04-11",
+   "period": "mid",
+   "digits": [
+    7,
+    5,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-11-eve",
+   "date": "2026-04-11",
+   "period": "eve",
+   "digits": [
+    9,
+    8,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-12-mid",
+   "date": "2026-04-12",
+   "period": "mid",
+   "digits": [
+    5,
+    9,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-12-eve",
+   "date": "2026-04-12",
+   "period": "eve",
+   "digits": [
+    2,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-13-mid",
+   "date": "2026-04-13",
+   "period": "mid",
+   "digits": [
+    7,
+    7,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-13-eve",
+   "date": "2026-04-13",
+   "period": "eve",
+   "digits": [
+    4,
+    5,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-14-mid",
+   "date": "2026-04-14",
+   "period": "mid",
+   "digits": [
+    4,
+    6,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-14-eve",
+   "date": "2026-04-14",
+   "period": "eve",
+   "digits": [
+    3,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-15-mid",
+   "date": "2026-04-15",
+   "period": "mid",
+   "digits": [
+    1,
+    2,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-15-eve",
+   "date": "2026-04-15",
+   "period": "eve",
+   "digits": [
+    3,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-16-mid",
+   "date": "2026-04-16",
+   "period": "mid",
+   "digits": [
+    8,
+    2,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-16-eve",
+   "date": "2026-04-16",
+   "period": "eve",
+   "digits": [
+    7,
+    9,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-17-mid",
+   "date": "2026-04-17",
+   "period": "mid",
+   "digits": [
+    6,
+    0,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-17-eve",
+   "date": "2026-04-17",
+   "period": "eve",
+   "digits": [
+    2,
+    7,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-18-mid",
+   "date": "2026-04-18",
+   "period": "mid",
+   "digits": [
+    6,
+    8,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-18-eve",
+   "date": "2026-04-18",
+   "period": "eve",
+   "digits": [
+    8,
+    9,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-19-mid",
+   "date": "2026-04-19",
+   "period": "mid",
+   "digits": [
+    9,
+    4,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-19-eve",
+   "date": "2026-04-19",
+   "period": "eve",
+   "digits": [
+    3,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-20-mid",
+   "date": "2026-04-20",
+   "period": "mid",
+   "digits": [
+    6,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-20-eve",
+   "date": "2026-04-20",
+   "period": "eve",
+   "digits": [
+    0,
+    1,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-21-mid",
+   "date": "2026-04-21",
+   "period": "mid",
+   "digits": [
+    7,
+    1,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-21-eve",
+   "date": "2026-04-21",
+   "period": "eve",
+   "digits": [
+    4,
+    6,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-22-mid",
+   "date": "2026-04-22",
+   "period": "mid",
+   "digits": [
+    6,
+    9,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-22-eve",
+   "date": "2026-04-22",
+   "period": "eve",
+   "digits": [
+    1,
+    5,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-23-mid",
+   "date": "2026-04-23",
+   "period": "mid",
+   "digits": [
+    9,
+    8,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-23-eve",
+   "date": "2026-04-23",
+   "period": "eve",
+   "digits": [
+    4,
+    7,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-24-mid",
+   "date": "2026-04-24",
+   "period": "mid",
+   "digits": [
+    1,
+    9,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-24-eve",
+   "date": "2026-04-24",
+   "period": "eve",
+   "digits": [
+    0,
+    5,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-25-mid",
+   "date": "2026-04-25",
+   "period": "mid",
+   "digits": [
+    0,
+    8,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-25-eve",
+   "date": "2026-04-25",
+   "period": "eve",
+   "digits": [
+    0,
+    9,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-26-mid",
+   "date": "2026-04-26",
+   "period": "mid",
+   "digits": [
+    7,
+    1,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-26-eve",
+   "date": "2026-04-26",
+   "period": "eve",
+   "digits": [
+    2,
+    5,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-27-mid",
+   "date": "2026-04-27",
+   "period": "mid",
+   "digits": [
+    0,
+    9,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-27-eve",
+   "date": "2026-04-27",
+   "period": "eve",
+   "digits": [
+    2,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-28-mid",
+   "date": "2026-04-28",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-28-eve",
+   "date": "2026-04-28",
+   "period": "eve",
+   "digits": [
+    0,
+    5,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-29-mid",
+   "date": "2026-04-29",
+   "period": "mid",
+   "digits": [
+    0,
+    5,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-29-eve",
+   "date": "2026-04-29",
+   "period": "eve",
+   "digits": [
+    2,
+    2,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-30-mid",
+   "date": "2026-04-30",
+   "period": "mid",
+   "digits": [
+    4,
+    9,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-04-30-eve",
+   "date": "2026-04-30",
+   "period": "eve",
+   "digits": [
+    8,
+    7,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-01-mid",
+   "date": "2026-05-01",
+   "period": "mid",
+   "digits": [
+    9,
+    0,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-01-eve",
+   "date": "2026-05-01",
+   "period": "eve",
+   "digits": [
+    7,
+    2,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-02-mid",
+   "date": "2026-05-02",
+   "period": "mid",
+   "digits": [
+    0,
+    6,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-02-eve",
+   "date": "2026-05-02",
+   "period": "eve",
+   "digits": [
+    5,
+    8,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-03-mid",
+   "date": "2026-05-03",
+   "period": "mid",
+   "digits": [
+    4,
+    5,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-03-eve",
+   "date": "2026-05-03",
+   "period": "eve",
+   "digits": [
+    9,
+    3,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-04-mid",
+   "date": "2026-05-04",
+   "period": "mid",
+   "digits": [
+    2,
+    9,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-04-eve",
+   "date": "2026-05-04",
+   "period": "eve",
+   "digits": [
+    8,
+    9,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-05-mid",
+   "date": "2026-05-05",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-05-eve",
+   "date": "2026-05-05",
+   "period": "eve",
+   "digits": [
+    7,
+    4,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-06-mid",
+   "date": "2026-05-06",
+   "period": "mid",
+   "digits": [
+    3,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-06-eve",
+   "date": "2026-05-06",
+   "period": "eve",
+   "digits": [
+    4,
+    0,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-07-mid",
+   "date": "2026-05-07",
+   "period": "mid",
+   "digits": [
+    6,
+    1,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-07-eve",
+   "date": "2026-05-07",
+   "period": "eve",
+   "digits": [
+    1,
+    6,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-08-mid",
+   "date": "2026-05-08",
+   "period": "mid",
+   "digits": [
+    3,
+    9,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-08-eve",
+   "date": "2026-05-08",
+   "period": "eve",
+   "digits": [
+    7,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-09-mid",
+   "date": "2026-05-09",
+   "period": "mid",
+   "digits": [
+    7,
+    3,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-09-eve",
+   "date": "2026-05-09",
+   "period": "eve",
+   "digits": [
+    7,
+    9,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-10-mid",
+   "date": "2026-05-10",
+   "period": "mid",
+   "digits": [
+    2,
+    1,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-10-eve",
+   "date": "2026-05-10",
+   "period": "eve",
+   "digits": [
+    6,
+    5,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-11-mid",
+   "date": "2026-05-11",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-11-eve",
+   "date": "2026-05-11",
+   "period": "eve",
+   "digits": [
+    5,
+    9,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-12-mid",
+   "date": "2026-05-12",
+   "period": "mid",
+   "digits": [
+    0,
+    9,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-12-eve",
+   "date": "2026-05-12",
+   "period": "eve",
+   "digits": [
+    8,
+    4,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-13-mid",
+   "date": "2026-05-13",
+   "period": "mid",
+   "digits": [
+    0,
+    0,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-13-eve",
+   "date": "2026-05-13",
+   "period": "eve",
+   "digits": [
+    4,
+    6,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-14-mid",
+   "date": "2026-05-14",
+   "period": "mid",
+   "digits": [
+    1,
+    1,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-14-eve",
+   "date": "2026-05-14",
+   "period": "eve",
+   "digits": [
+    2,
+    2,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-15-mid",
+   "date": "2026-05-15",
+   "period": "mid",
+   "digits": [
+    9,
+    0,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-15-eve",
+   "date": "2026-05-15",
+   "period": "eve",
+   "digits": [
+    1,
+    6,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-16-mid",
+   "date": "2026-05-16",
+   "period": "mid",
+   "digits": [
+    3,
+    9,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-16-eve",
+   "date": "2026-05-16",
+   "period": "eve",
+   "digits": [
+    7,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-17-mid",
+   "date": "2026-05-17",
+   "period": "mid",
+   "digits": [
+    9,
+    9,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-17-eve",
+   "date": "2026-05-17",
+   "period": "eve",
+   "digits": [
+    9,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-18-mid",
+   "date": "2026-05-18",
+   "period": "mid",
+   "digits": [
+    4,
+    8,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-18-eve",
+   "date": "2026-05-18",
+   "period": "eve",
+   "digits": [
+    6,
+    0,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-19-mid",
+   "date": "2026-05-19",
+   "period": "mid",
+   "digits": [
+    2,
+    9,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-19-eve",
+   "date": "2026-05-19",
+   "period": "eve",
+   "digits": [
+    7,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-20-mid",
+   "date": "2026-05-20",
+   "period": "mid",
+   "digits": [
+    2,
+    7,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-20-eve",
+   "date": "2026-05-20",
+   "period": "eve",
+   "digits": [
+    9,
+    9,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-21-mid",
+   "date": "2026-05-21",
+   "period": "mid",
+   "digits": [
+    9,
+    3,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-21-eve",
+   "date": "2026-05-21",
+   "period": "eve",
+   "digits": [
+    5,
+    2,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-22-mid",
+   "date": "2026-05-22",
+   "period": "mid",
+   "digits": [
+    6,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-22-eve",
+   "date": "2026-05-22",
+   "period": "eve",
+   "digits": [
+    1,
+    7,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-23-mid",
+   "date": "2026-05-23",
+   "period": "mid",
+   "digits": [
+    1,
+    7,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-23-eve",
+   "date": "2026-05-23",
+   "period": "eve",
+   "digits": [
+    6,
+    7,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-24-mid",
+   "date": "2026-05-24",
+   "period": "mid",
+   "digits": [
+    3,
+    5,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-24-eve",
+   "date": "2026-05-24",
+   "period": "eve",
+   "digits": [
+    1,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-25-mid",
+   "date": "2026-05-25",
+   "period": "mid",
+   "digits": [
+    6,
+    6,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-25-eve",
+   "date": "2026-05-25",
+   "period": "eve",
+   "digits": [
+    7,
+    8,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-26-mid",
+   "date": "2026-05-26",
+   "period": "mid",
+   "digits": [
+    8,
+    9,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-26-eve",
+   "date": "2026-05-26",
+   "period": "eve",
+   "digits": [
+    7,
+    6,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-27-mid",
+   "date": "2026-05-27",
+   "period": "mid",
+   "digits": [
+    1,
+    0,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-27-eve",
+   "date": "2026-05-27",
+   "period": "eve",
+   "digits": [
+    2,
+    0,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-28-mid",
+   "date": "2026-05-28",
+   "period": "mid",
+   "digits": [
+    0,
+    8,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-28-eve",
+   "date": "2026-05-28",
+   "period": "eve",
+   "digits": [
+    4,
+    5,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-29-mid",
+   "date": "2026-05-29",
+   "period": "mid",
+   "digits": [
+    8,
+    2,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-29-eve",
+   "date": "2026-05-29",
+   "period": "eve",
+   "digits": [
+    9,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-30-mid",
+   "date": "2026-05-30",
+   "period": "mid",
+   "digits": [
+    7,
+    8,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-30-eve",
+   "date": "2026-05-30",
+   "period": "eve",
+   "digits": [
+    1,
+    9,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-31-mid",
+   "date": "2026-05-31",
+   "period": "mid",
+   "digits": [
+    7,
+    6,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-05-31-eve",
+   "date": "2026-05-31",
+   "period": "eve",
+   "digits": [
+    8,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-01-mid",
+   "date": "2026-06-01",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-01-eve",
+   "date": "2026-06-01",
+   "period": "eve",
+   "digits": [
+    4,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-02-mid",
+   "date": "2026-06-02",
+   "period": "mid",
+   "digits": [
+    0,
+    3,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-02-eve",
+   "date": "2026-06-02",
+   "period": "eve",
+   "digits": [
+    5,
+    9,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-03-mid",
+   "date": "2026-06-03",
+   "period": "mid",
+   "digits": [
+    0,
+    7,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-03-eve",
+   "date": "2026-06-03",
+   "period": "eve",
+   "digits": [
+    3,
+    4,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-04-mid",
+   "date": "2026-06-04",
+   "period": "mid",
+   "digits": [
+    4,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-04-eve",
+   "date": "2026-06-04",
+   "period": "eve",
+   "digits": [
+    9,
+    0,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-05-mid",
+   "date": "2026-06-05",
+   "period": "mid",
+   "digits": [
+    0,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-05-eve",
+   "date": "2026-06-05",
+   "period": "eve",
+   "digits": [
+    9,
+    5,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-06-mid",
+   "date": "2026-06-06",
+   "period": "mid",
+   "digits": [
+    8,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-06-eve",
+   "date": "2026-06-06",
+   "period": "eve",
+   "digits": [
+    8,
+    1,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-07-mid",
+   "date": "2026-06-07",
+   "period": "mid",
+   "digits": [
+    9,
+    1,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-07-eve",
+   "date": "2026-06-07",
+   "period": "eve",
+   "digits": [
+    9,
+    2,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-08-mid",
+   "date": "2026-06-08",
+   "period": "mid",
+   "digits": [
+    3,
+    9,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-08-eve",
+   "date": "2026-06-08",
+   "period": "eve",
+   "digits": [
+    6,
+    7,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-09-mid",
+   "date": "2026-06-09",
+   "period": "mid",
+   "digits": [
+    8,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-09-eve",
+   "date": "2026-06-09",
+   "period": "eve",
+   "digits": [
+    4,
+    5,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-10-mid",
+   "date": "2026-06-10",
+   "period": "mid",
+   "digits": [
+    9,
+    9,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-10-eve",
+   "date": "2026-06-10",
+   "period": "eve",
+   "digits": [
+    1,
+    8,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-11-mid",
+   "date": "2026-06-11",
+   "period": "mid",
+   "digits": [
+    3,
+    3,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-11-eve",
+   "date": "2026-06-11",
+   "period": "eve",
+   "digits": [
+    5,
+    3,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-12-mid",
+   "date": "2026-06-12",
+   "period": "mid",
+   "digits": [
+    3,
+    2,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-12-eve",
+   "date": "2026-06-12",
+   "period": "eve",
+   "digits": [
+    7,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-13-mid",
+   "date": "2026-06-13",
+   "period": "mid",
+   "digits": [
+    4,
+    4,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-13-eve",
+   "date": "2026-06-13",
+   "period": "eve",
+   "digits": [
+    3,
+    9,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-14-mid",
+   "date": "2026-06-14",
+   "period": "mid",
+   "digits": [
+    3,
+    3,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-14-eve",
+   "date": "2026-06-14",
+   "period": "eve",
+   "digits": [
+    6,
+    5,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-15-mid",
+   "date": "2026-06-15",
+   "period": "mid",
+   "digits": [
+    1,
+    4,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-15-eve",
+   "date": "2026-06-15",
+   "period": "eve",
+   "digits": [
+    3,
+    8,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-16-mid",
+   "date": "2026-06-16",
+   "period": "mid",
+   "digits": [
+    8,
+    7,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-16-eve",
+   "date": "2026-06-16",
+   "period": "eve",
+   "digits": [
+    8,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-17-mid",
+   "date": "2026-06-17",
+   "period": "mid",
+   "digits": [
+    8,
+    6,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-17-eve",
+   "date": "2026-06-17",
+   "period": "eve",
+   "digits": [
+    0,
+    9,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-18-mid",
+   "date": "2026-06-18",
+   "period": "mid",
+   "digits": [
+    0,
+    8,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-18-eve",
+   "date": "2026-06-18",
+   "period": "eve",
+   "digits": [
+    3,
+    3,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-19-mid",
+   "date": "2026-06-19",
+   "period": "mid",
+   "digits": [
+    7,
+    8,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-19-eve",
+   "date": "2026-06-19",
+   "period": "eve",
+   "digits": [
+    6,
+    1,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-20-mid",
+   "date": "2026-06-20",
+   "period": "mid",
+   "digits": [
+    1,
+    7,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-20-eve",
+   "date": "2026-06-20",
+   "period": "eve",
+   "digits": [
+    6,
+    7,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-21-mid",
+   "date": "2026-06-21",
+   "period": "mid",
+   "digits": [
+    0,
+    3,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-21-eve",
+   "date": "2026-06-21",
+   "period": "eve",
+   "digits": [
+    4,
+    6,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-22-mid",
+   "date": "2026-06-22",
+   "period": "mid",
+   "digits": [
+    7,
+    5,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-22-eve",
+   "date": "2026-06-22",
+   "period": "eve",
+   "digits": [
+    7,
+    7,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-23-mid",
+   "date": "2026-06-23",
+   "period": "mid",
+   "digits": [
+    0,
+    8,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-23-eve",
+   "date": "2026-06-23",
+   "period": "eve",
+   "digits": [
+    5,
+    1,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-24-mid",
+   "date": "2026-06-24",
+   "period": "mid",
+   "digits": [
+    8,
+    2,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-24-eve",
+   "date": "2026-06-24",
+   "period": "eve",
+   "digits": [
+    4,
+    3,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-25-mid",
+   "date": "2026-06-25",
+   "period": "mid",
+   "digits": [
+    9,
+    5,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-25-eve",
+   "date": "2026-06-25",
+   "period": "eve",
+   "digits": [
+    7,
+    2,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-26-mid",
+   "date": "2026-06-26",
+   "period": "mid",
+   "digits": [
+    0,
+    6,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-26-eve",
+   "date": "2026-06-26",
+   "period": "eve",
+   "digits": [
+    5,
+    7,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-27-mid",
+   "date": "2026-06-27",
+   "period": "mid",
+   "digits": [
+    7,
+    0,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-27-eve",
+   "date": "2026-06-27",
+   "period": "eve",
+   "digits": [
+    1,
+    1,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-28-mid",
+   "date": "2026-06-28",
+   "period": "mid",
+   "digits": [
+    4,
+    5,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-28-eve",
+   "date": "2026-06-28",
+   "period": "eve",
+   "digits": [
+    0,
+    5,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-29-mid",
+   "date": "2026-06-29",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-29-eve",
+   "date": "2026-06-29",
+   "period": "eve",
+   "digits": [
+    5,
+    4,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-30-mid",
+   "date": "2026-06-30",
+   "period": "mid",
+   "digits": [
+    6,
+    5,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-06-30-eve",
+   "date": "2026-06-30",
+   "period": "eve",
+   "digits": [
+    5,
+    2,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-01-mid",
+   "date": "2026-07-01",
+   "period": "mid",
+   "digits": [
+    4,
+    0,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-01-eve",
+   "date": "2026-07-01",
+   "period": "eve",
+   "digits": [
+    9,
+    2,
+    5
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-02-mid",
+   "date": "2026-07-02",
+   "period": "mid",
+   "digits": [
+    3,
+    0,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-02-eve",
+   "date": "2026-07-02",
+   "period": "eve",
+   "digits": [
+    2,
+    0,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-03-mid",
+   "date": "2026-07-03",
+   "period": "mid",
+   "digits": [
+    8,
+    8,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-03-eve",
+   "date": "2026-07-03",
+   "period": "eve",
+   "digits": [
+    1,
+    8,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-04-mid",
+   "date": "2026-07-04",
+   "period": "mid",
+   "digits": [
+    5,
+    3,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-04-eve",
+   "date": "2026-07-04",
+   "period": "eve",
+   "digits": [
+    4,
+    8,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-05-mid",
+   "date": "2026-07-05",
+   "period": "mid",
+   "digits": [
+    3,
+    1,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-05-eve",
+   "date": "2026-07-05",
+   "period": "eve",
+   "digits": [
+    4,
+    7,
+    1
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-06-mid",
+   "date": "2026-07-06",
+   "period": "mid",
+   "digits": [
+    4,
+    3,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-06-eve",
+   "date": "2026-07-06",
+   "period": "eve",
+   "digits": [
+    4,
+    4,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-07-mid",
+   "date": "2026-07-07",
+   "period": "mid",
+   "digits": [
+    0,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-07-eve",
+   "date": "2026-07-07",
+   "period": "eve",
+   "digits": [
+    6,
+    9,
+    8
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-08-mid",
+   "date": "2026-07-08",
+   "period": "mid",
+   "digits": [
+    8,
+    5,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-08-eve",
+   "date": "2026-07-08",
+   "period": "eve",
+   "digits": [
+    6,
+    8,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-09-mid",
+   "date": "2026-07-09",
+   "period": "mid",
+   "digits": [
+    2,
+    2,
+    2
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-09-eve",
+   "date": "2026-07-09",
+   "period": "eve",
+   "digits": [
+    3,
+    8,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-10-mid",
+   "date": "2026-07-10",
+   "period": "mid",
+   "digits": [
+    0,
+    2,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-10-eve",
+   "date": "2026-07-10",
+   "period": "eve",
+   "digits": [
+    8,
+    3,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-11-mid",
+   "date": "2026-07-11",
+   "period": "mid",
+   "digits": [
+    2,
+    0,
+    4
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-11-eve",
+   "date": "2026-07-11",
+   "period": "eve",
+   "digits": [
+    9,
+    7,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-12-mid",
+   "date": "2026-07-12",
+   "period": "mid",
+   "digits": [
+    0,
+    5,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-12-eve",
+   "date": "2026-07-12",
+   "period": "eve",
+   "digits": [
+    2,
+    8,
+    3
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-13-mid",
+   "date": "2026-07-13",
+   "period": "mid",
+   "digits": [
+    7,
+    4,
+    7
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-13-eve",
+   "date": "2026-07-13",
+   "period": "eve",
+   "digits": [
+    5,
+    8,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-14-mid",
+   "date": "2026-07-14",
+   "period": "mid",
+   "digits": [
+    1,
+    4,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-14-eve",
+   "date": "2026-07-14",
+   "period": "eve",
+   "digits": [
+    3,
+    1,
+    9
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-15-mid",
+   "date": "2026-07-15",
+   "period": "mid",
+   "digits": [
+    9,
+    7,
+    6
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-15-eve",
+   "date": "2026-07-15",
+   "period": "eve",
+   "digits": [
+    8,
+    0,
+    0
+   ],
+   "source": "socrata",
+   "draw_number": null,
+   "fetched_at": "2026-07-17T05:42:20+00:00"
+  },
+  {
+   "id": "2026-07-16-mid",
+   "date": "2026-07-16",
+   "period": "mid",
+   "digits": [
+    8,
+    0,
+    9
+   ],
+   "source": "nyl_api",
+   "draw_number": 23222,
+   "fetched_at": "2026-07-17T05:42:21+00:00"
+  },
+  {
+   "id": "2026-07-16-eve",
+   "date": "2026-07-16",
+   "period": "eve",
+   "digits": [
+    6,
+    0,
+    0
+   ],
+   "source": "nyl_api",
+   "draw_number": 23223,
+   "fetched_at": "2026-07-17T05:42:21+00:00"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+name: post-draw
+on:
+  schedule:
+    - cron: '33 18 * * *'   # 2:33 PM EDT (midday, summer)
+    - cron: '33 19 * * *'   # 2:33 PM EST (midday, winter) / 3:33 PM EDT retry in summer
+    - cron: '33 2 * * *'    # 10:33 PM EDT (evening, summer; UTC date is next day)
+    - cron: '33 3 * * *'    # 10:33 PM EST (evening, winter) / 11:33 PM EDT retry
+  workflow_dispatch: {}
+concurrency:
+  group: pick3-state
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  postdraw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - name: Run post-draw pipeline
+        run: python3 -m engine.pipeline postdraw --max-wait-min 30
+      - name: Commit state
+        run: |
+          git config user.name  "pick3-oracle-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/data data
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          DRAW=$(python3 -m engine.pipeline last-processed)
+          git commit -m "draw ${DRAW}: grade + next prediction"
+          git pull --rebase origin main
+          git push
