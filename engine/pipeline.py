@@ -165,11 +165,23 @@ def cmd_postdraw(args):
               f"reconcile will catch it", file=sys.stderr)
         return
 
+    _community_refresh(state)
     graded = process_draw(state, draw, now, args.allow_unlocked)
     state.save(_iso(now))
     print(f"processed {target_id} = {''.join(map(str, draw['digits']))}"
           f"{' (graded)' if graded else ''}; next prediction: "
           f"{state.prediction['draw_id']}")
+
+
+def _community_refresh(state):
+    """Pull fresh LotteryPost member picks (Firecrawl) so the next prediction can
+    use them. Strictly best-effort: failures never block the pipeline."""
+    try:
+        from community import lp_reader
+        if lp_reader.update():
+            state.community = store.load_json(store.COMMUNITY, {"picks": {}})
+    except Exception as e:  # noqa: BLE001 — enhancement layer, never fatal
+        print(f"WARN: community refresh failed: {e}", file=sys.stderr)
 
 
 def _ensure_prediction(state, now):
@@ -193,6 +205,7 @@ def _ensure_prediction(state, now):
 def cmd_reconcile(args):
     now = _now_utc(args)
     state = State()
+    _community_refresh(state)
     rows = fetch.fetch_socrata(limit=args.days + 2)
     known = {d["id"]: d for d in state.draws}
 

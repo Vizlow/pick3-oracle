@@ -20,13 +20,15 @@ jobs:
         with:
           fetch-depth: 50
       - name: Run post-draw pipeline
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: python3 -m engine.pipeline postdraw --max-wait-min 30
       - name: Commit state
         id: commit
         run: |
           git config user.name  "pick3-oracle-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site/data data
+          git add site/data data community/state.json
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           DRAW=$(python3 -m engine.pipeline last-processed)
           git commit -m "draw ${DRAW}: grade + next prediction"
