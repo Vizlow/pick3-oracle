@@ -2,8 +2,10 @@ name: post-draw
 on:
   schedule:
     - cron: '33 18 * * *'   # 2:33 PM EDT (midday, summer)
+    - cron: '3 19 * * *'    # jitter backstop ~30 min later
     - cron: '33 19 * * *'   # 2:33 PM EST (midday, winter) / 3:33 PM EDT retry in summer
     - cron: '33 2 * * *'    # 10:33 PM EDT (evening, summer; UTC date is next day)
+    - cron: '3 3 * * *'     # jitter backstop
     - cron: '33 3 * * *'    # 10:33 PM EST (evening, winter) / 11:33 PM EDT retry
   workflow_dispatch: {}
 concurrency:
@@ -11,10 +13,14 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  pages: write
+  id-token: write
 jobs:
   postdraw:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      pushed: ${{ steps.commit.outputs.pushed }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,9 +41,28 @@ jobs:
           git pull --rebase origin main
           git push
           echo "pushed=true" >> "$GITHUB_OUTPUT"
-      - name: Deploy site to Vercel
-        if: steps.commit.outputs.pushed == 'true'
+  publish:
+    needs: postdraw
+    if: needs.postdraw.outputs.pushed == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pick3-pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Deploy to Vercel (best effort until a dashboard token is set)
+        continue-on-error: true
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: npx --yes vercel@latest deploy --prod --yes --token "${{ secrets.VERCEL_TOKEN }}"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
