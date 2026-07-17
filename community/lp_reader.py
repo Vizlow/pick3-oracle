@@ -383,6 +383,31 @@ def extract_picks(text):
     return out
 
 
+# Community pair-call notation: "80x" = front pair, "x01" = back pair,
+# "8x1" = split pair (1st & 3rd digits). Case-insensitive on the x.
+_PAIR_FRONT_RE = re.compile(r"(?<![\dxX])(\d{2})[xX](?![\dxX])")
+_PAIR_BACK_RE = re.compile(r"(?<![\dxX])[xX](\d{2})(?![\dxX])")
+_PAIR_SPLIT_RE = re.compile(r"(?<![\dxX])(\d)[xX](\d)(?![\dxX])")
+MAX_PAIRS_PER_POST = 20
+
+
+def extract_pair_hints(text):
+    """Pair calls in a post, as {"kind": front|back|split, "digits": [a, b]}."""
+    out, seen = [], set()
+    for kind, rx in (("front", _PAIR_FRONT_RE), ("back", _PAIR_BACK_RE),
+                     ("split", _PAIR_SPLIT_RE)):
+        for m in rx.finditer(text or ""):
+            digits = tuple(int(c) for c in "".join(m.groups()))
+            key = (kind, digits)
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append({"kind": kind, "digits": list(digits)})
+            if len(out) >= MAX_PAIRS_PER_POST:
+                return out
+    return out
+
+
 # ------------------------------------------------------------------ attribution
 
 
@@ -418,16 +443,37 @@ def attribute_posts(posts):
     return entries
 
 
+def attribute_pair_hints(posts):
+    """[(draw_id, {"member", "kind", "digits", "posted_at"}), ...] for pair calls."""
+    entries = []
+    for post in posts:
+        hints = extract_pair_hints(post["text"])
+        if not hints:
+            continue
+        posted_at = datetime.fromisoformat(post["posted_at"])
+        for did in draws_for_post(posted_at):
+            for h in hints:
+                entries.append(
+                    (did, {"member": post["member"], "kind": h["kind"],
+                           "digits": h["digits"], "posted_at": post["posted_at"]})
+                )
+    return entries
+
+
+def _entry_key(entry):
+    if "combo" in entry:
+        return (entry["member"], tuple(entry["combo"]))
+    return (entry["member"], entry["kind"], tuple(entry["digits"]))
+
+
 def merge_picks(picks, entries):
-    """Merge new entries into the picks-by-draw dict, deduping on
-    (member, combo) per draw_id. Existing entries always win."""
-    keysets = {
-        did: {(e["member"], tuple(e["combo"])) for e in lst}
-        for did, lst in picks.items()
-    }
+    """Merge new entries into the by-draw dict, deduping per draw_id on
+    (member, combo) for picks or (member, kind, digits) for pair hints.
+    Existing entries always win."""
+    keysets = {did: {_entry_key(e) for e in lst} for did, lst in picks.items()}
     for did, entry in entries:
         keys = keysets.setdefault(did, set())
-        key = (entry["member"], tuple(entry["combo"]))
+        key = _entry_key(entry)
         if key in keys:
             continue
         keys.add(key)
@@ -499,16 +545,22 @@ def _update(now_utc, backfill_pages):
         posts.extend(parse_posts(page_html, now_et))
 
     entries = attribute_posts(posts)
+    pair_entries = attribute_pair_hints(posts)
 
     doc = store.load_json(store.COMMUNITY, None) or {}
     picks = doc.get("picks") or {}
+    pair_hints = doc.get("pair_hints") or {}
     merge_picks(picks, entries)
+    merge_picks(pair_hints, pair_entries)
     picks = prune_picks(picks, now_et)
+    pair_hints = prune_picks(pair_hints, now_et)
 
     out = {
         "updated_at": now_et.astimezone(timezone.utc).isoformat(timespec="seconds"),
         "thread": thread,
         "picks": {did: picks[did] for did in sorted(picks, key=timeutil.sort_key)},
+        "pair_hints": {did: pair_hints[did]
+                       for did in sorted(pair_hints, key=timeutil.sort_key)},
     }
     store.save_json(store.COMMUNITY, out)
 

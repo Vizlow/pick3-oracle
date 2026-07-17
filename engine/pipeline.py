@@ -62,8 +62,13 @@ class State:
 
     def ctx_for(self, draw_id):
         d, period = timeutil.parse_draw_id(draw_id)
-        return Ctx(self.combos_before(draw_id), d, period,
-                   community=self.community.get("picks", {}).get(draw_id, []))
+        picks = list(self.community.get("picks", {}).get(draw_id, []))
+        picks += [
+            {"member": e.get("member"),
+             "pair": {"kind": e.get("kind"), "digits": e.get("digits")}}
+            for e in self.community.get("pair_hints", {}).get(draw_id, [])
+        ]
+        return Ctx(self.combos_before(draw_id), d, period, community=picks)
 
     def save(self, now_iso):
         store.save_history(self.draws)

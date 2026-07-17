@@ -225,3 +225,36 @@ def test_update_is_fail_soft(monkeypatch, tmp_path, capsys):
     monkeypatch.setattr(lp_reader, "STATE_FILE", tmp_path / "state.json")
     assert lp_reader.update(now_utc=datetime(2026, 7, 17, 5, 0, tzinfo=timezone.utc)) is False
     assert "WARN" in capsys.readouterr().err
+
+
+# ------------------------------------------------------------- pair hints
+def test_extract_pair_hints_soledad_style():
+    from community.lp_reader import extract_pair_hints
+    text = "paper trails for a few games or days\n43x x33 or 4x3\n80x x01 or 8x1\nor 21x"
+    hints = extract_pair_hints(text)
+    got = {(h["kind"], tuple(h["digits"])) for h in hints}
+    assert ("front", (4, 3)) in got and ("front", (8, 0)) in got and ("front", (2, 1)) in got
+    assert ("back", (3, 3)) in got and ("back", (0, 1)) in got
+    assert ("split", (4, 3)) in got and ("split", (8, 1)) in got
+
+
+def test_pair_hints_ignore_plain_numbers_and_years():
+    from community.lp_reader import extract_pair_hints
+    assert extract_pair_hints("617 117 177 good luck until 2026") == []
+
+
+def test_community_tactic_scores_pair_calls():
+    from datetime import date
+    from engine.tactics import Ctx
+    from engine.tactics.community import community
+    picks = [
+        {"member": "Soledad", "pair": {"kind": "front", "digits": [8, 0]}},
+        {"member": "Andrew1209", "combo": [2, 1, 6]},
+    ]
+    ctx = Ctx([(1, 2, 3)] * 10, date(2026, 7, 17), "mid", community=picks)
+    scores = community(ctx)
+    from engine import lmath
+    assert scores[lmath.idx((8, 0, 9))] > 0      # 80x covers 809
+    assert scores[lmath.idx((8, 0, 0))] > 0      # ...and 800
+    assert scores[lmath.idx((0, 8, 9))] == 0.0   # front pair is positional
+    assert scores[lmath.idx((2, 1, 6))] > scores[lmath.idx((8, 0, 9))]  # full pick > pair

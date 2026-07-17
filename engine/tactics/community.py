@@ -13,14 +13,28 @@ def _extract(item):
     return member, tuple(int(d) for d in combo)
 
 
+_PAIR_POSITIONS = {"front": (0, 1), "back": (1, 2), "split": (0, 2)}
+
+
 @tactic("community")
 def community(ctx):
     """Each picked combo scores 1.0 + 0.25 per extra member picking it (cap 2.0);
-    its boxed arrangements score 0.5x that. No picks -> all zeros."""
+    its boxed arrangements score 0.5x that. Pair calls ("80x" = front, "x01" =
+    back, "8x1" = split) score their 10 matching straights at 0.6 + 0.2 per
+    extra member (cap 1.2). No picks -> all zeros."""
     if not ctx.community:
         return [0.0] * 1000
-    members = {}
+    members, pair_members = {}, {}
     for item in ctx.community:
+        if isinstance(item, dict) and "pair" in item:
+            p = item["pair"]
+            try:
+                key = (p["kind"], tuple(int(d) for d in p["digits"]))
+            except (TypeError, ValueError, KeyError):
+                continue
+            if key[0] in _PAIR_POSITIONS and len(key[1]) == 2:
+                pair_members.setdefault(key, set()).add(item.get("member"))
+            continue
         try:
             member, combo = _extract(item)
         except (TypeError, ValueError, KeyError, IndexError):
@@ -29,6 +43,16 @@ def community(ctx):
             continue
         members.setdefault(combo, set()).add(member)
     weights = {}
+    for (kind, digits), who in pair_members.items():
+        w = min(0.6 + 0.2 * (len(who) - 1), 1.2)
+        i, j = _PAIR_POSITIONS[kind]
+        k = 3 - i - j
+        for z in range(10):
+            combo = [0, 0, 0]
+            combo[i], combo[j] = digits
+            combo[k] = z
+            combo = tuple(combo)
+            weights[combo] = max(weights.get(combo, 0.0), w)
     for combo, who in members.items():
         w = min(1.0 + 0.25 * (len(who) - 1), 2.0)
         weights[combo] = max(weights.get(combo, 0.0), w)
