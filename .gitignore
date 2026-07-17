@@ -5,3 +5,5 @@ __pycache__/
 node_modules/
 community/raw/*.html
 .vercel/
+.vercel
+.env*

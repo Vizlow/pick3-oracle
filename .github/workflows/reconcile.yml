@@ -23,6 +23,7 @@ jobs:
           python3 -m pip install pytest -q
           CI=1 python3 -m pytest -q
       - name: Commit state
+        id: commit
         run: |
           git config user.name  "pick3-oracle-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -31,3 +32,10 @@ jobs:
           git commit -m "reconcile: $(date -u +%F)"
           git pull --rebase origin main
           git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+      - name: Deploy site to Vercel
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: npx --yes vercel@latest deploy --prod --yes --token "${{ secrets.VERCEL_TOKEN }}"
