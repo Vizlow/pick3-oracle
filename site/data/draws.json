@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-17T06:20:33Z",
+ "updated_at": "2026-07-17T11:57:37Z",
  "draws": [
   {
    "id": "2025-12-29-mid",
@@ -4978,7 +4978,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-08-eve",
@@ -4991,7 +4992,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-09-mid",
@@ -5004,7 +5006,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-09-eve",
@@ -5017,7 +5020,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-10-mid",
@@ -5030,7 +5034,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-10-eve",
@@ -5043,7 +5048,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-11-mid",
@@ -5056,7 +5062,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-11-eve",
@@ -5069,7 +5076,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-12-mid",
@@ -5082,7 +5090,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-12-eve",
@@ -5095,7 +5104,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-13-mid",
@@ -5108,7 +5118,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-13-eve",
@@ -5121,7 +5132,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-14-mid",
@@ -5134,7 +5146,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-14-eve",
@@ -5147,7 +5160,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-15-mid",
@@ -5160,7 +5174,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-15-eve",
@@ -5173,7 +5188,8 @@
    ],
    "source": "socrata",
    "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
+   "fetched_at": "2026-07-17T05:42:20+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-16-mid",
@@ -5186,7 +5202,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23222,
-   "fetched_at": "2026-07-17T05:42:21+00:00"
+   "fetched_at": "2026-07-17T05:42:21+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-07-16-eve",
@@ -5199,7 +5216,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23223,
-   "fetched_at": "2026-07-17T05:42:21+00:00"
+   "fetched_at": "2026-07-17T05:42:21+00:00",
+   "reconciled": true
   }
  ]
 }
