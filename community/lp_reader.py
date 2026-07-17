@@ -574,9 +574,47 @@ def _update(now_utc, backfill_pages):
 # ------------------------------------------------------------------ CLI
 
 
+def add_manual(text, member="forum-report", now_utc=None):
+    """Manually inject forum picks the scraper can't see (image posts, other
+    threads, user-reported intel). Same extract -> attribute -> merge path as
+    scraped posts; posted_at = now, so attribution stays honestly pre-draw."""
+    now_et = _to_et(now_utc)
+    post = {"member": member,
+            "posted_at": now_et.isoformat(timespec="seconds"), "text": text}
+    entries = attribute_posts([post])
+    pair_entries = attribute_pair_hints([post])
+    doc = store.load_json(store.COMMUNITY, None) or {}
+    picks = doc.get("picks") or {}
+    pair_hints = doc.get("pair_hints") or {}
+    merge_picks(picks, entries)
+    merge_picks(pair_hints, pair_entries)
+    picks = prune_picks(picks, now_et)
+    pair_hints = prune_picks(pair_hints, now_et)
+    doc.update({
+        "updated_at": now_et.astimezone(timezone.utc).isoformat(timespec="seconds"),
+        "picks": {did: picks[did] for did in sorted(picks, key=timeutil.sort_key)},
+        "pair_hints": {did: pair_hints[did]
+                       for did in sorted(pair_hints, key=timeutil.sort_key)},
+    })
+    store.save_json(store.COMMUNITY, doc)
+    return len(entries) + len(pair_entries)
+
+
 def main():
+    if "--add" in sys.argv:
+        try:
+            text = sys.argv[sys.argv.index("--add") + 1]
+        except IndexError:
+            print(json.dumps({"error": '--add requires quoted text of picks'}))
+            sys.exit(1)
+        member = "forum-report"
+        if "--member" in sys.argv:
+            member = sys.argv[sys.argv.index("--member") + 1]
+        n = add_manual(text, member)
+        print(json.dumps({"success": True, "entries_added": n, "member": member}))
+        sys.exit(0)
     if "--update" not in sys.argv:
-        print(json.dumps({"error": "Usage: python3 -m community.lp_reader --update [--backfill N]"}))
+        print(json.dumps({"error": "Usage: python3 -m community.lp_reader --update [--backfill N] | --add \"picks text\" [--member NAME]"}))
         sys.exit(1)
     backfill = 0
     if "--backfill" in sys.argv:
