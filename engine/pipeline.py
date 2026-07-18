@@ -80,7 +80,8 @@ class State:
         store.save_json(store.WEIGHTS, self.weights)
         store.save_json(store.STATS, stats.build(
             self.draws, self.ledger["entries"],
-            self.backtest.get("entries", []), self.weights, now_iso))
+            self.backtest.get("entries", []), self.weights, now_iso,
+            community_doc=self.community))
 
 
 def process_draw(state, draw, now, allow_unlocked=False):

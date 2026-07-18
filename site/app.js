@@ -164,9 +164,14 @@ function renderNow(pred, community) {
   tl.append(` · engine v${pred.engine_version}`);
 
   const cl = $("#community-line");
-  if (community) {
-    const n = (community.picks || community.entries || []).length;
-    cl.textContent = `Community: ${n} member pick${n === 1 ? "" : "s"} loaded for this draw`;
+  const cPicks = community && community.picks && community.picks[pred.draw_id] || [];
+  const cPairs = community && community.pair_hints && community.pair_hints[pred.draw_id] || [];
+  if (cPicks.length || cPairs.length) {
+    const members = [...new Set([...cPicks, ...cPairs].map((e) => e.member))];
+    const bits = [];
+    if (cPicks.length) bits.push(`${cPicks.length} pick${cPicks.length === 1 ? "" : "s"}`);
+    if (cPairs.length) bits.push(`${cPairs.length} pair call${cPairs.length === 1 ? "" : "s"}`);
+    cl.textContent = `Community: ${bits.join(" + ")} from ${members.join(", ")}`;
   } else {
     cl.textContent = "Community picks: none published for this draw";
   }
@@ -505,6 +510,65 @@ function renderTactics(weights) {
   });
 }
 
+/* --------------------------------------------------------------- community */
+function renderCommunity(stats) {
+  const c = stats.community;
+  if (!c || !c.members || !c.members.length) return; // no data — keep section hidden
+  $("#community-panel").hidden = false;
+
+  const total = c.total || { stake: 0, won: 0, net: 0, roi: 0 };
+  const rndRoi = c.random_ev_roi != null ? c.random_ev_roi : -0.52;
+  const grid = $("#community-summary");
+  grid.innerHTML = "";
+
+  const netCard = el("div", "score-card");
+  netCard.appendChild(el("div", "metric", "Forum net"));
+  netCard.appendChild(el("div", "big " + (total.net >= 0 ? "pos" : "neg"), fmtMoney(total.net)));
+  netCard.appendChild(el("div", "vs", `${fmtMoney(total.stake)} staked · ${fmtMoney(total.won)} won`));
+  grid.appendChild(netCard);
+
+  const roiCard = el("div", "score-card");
+  roiCard.appendChild(el("div", "metric", "Forum ROI"));
+  roiCard.appendChild(el("div", "big " + (total.roi >= 0 ? "pos" : "neg"), fmtPct(total.roi, 0)));
+  const vs = el("div", "vs");
+  const beat = total.roi > rndRoi;
+  vs.appendChild(el("span", beat ? "beat" : "under", beat ? "beats" : "trails"));
+  vs.append(` the ${fmtPct(rndRoi, 0)} random baseline`);
+  roiCard.appendChild(vs);
+  grid.appendChild(roiCard);
+
+  const memCard = el("div", "score-card");
+  memCard.appendChild(el("div", "metric", "Members graded"));
+  memCard.appendChild(el("div", "big", String(c.members.length)));
+  memCard.appendChild(el("div", "vs", "LotteryPost thread"));
+  grid.appendChild(memCard);
+
+  const tbody = $("#community-table tbody");
+  tbody.innerHTML = "";
+  for (const m of c.members.slice().sort((a, b) => b.net - a.net)) {
+    const tr = el("tr");
+    tr.appendChild(el("td", null, m.member));
+    const pairPlays = m.pair_plays || 0;
+    tr.appendChild(el("td", "num", pairPlays > 0 ? `${m.plays} + ${pairPlays}p` : String(m.plays)));
+    tr.appendChild(el("td", "num", fmtMoney(m.stake)));
+    tr.appendChild(el("td", "num", fmtMoney(m.won)));
+    tr.appendChild(el("td", "num " + (m.net >= 0 ? "pos" : "neg"), fmtMoney(m.net)));
+    tr.appendChild(el("td", "num " + (m.roi >= 0 ? "pos" : "neg"), fmtPct(m.roi)));
+    const hitsCell = el("td");
+    if (m.hits && m.hits.length) {
+      for (const h of m.hits) {
+        const chip = el("span", "chip chip-hit", `${h.pick.replace(/-(front|back)$/, "")}→${h.result}`);
+        chip.title = h.draw_id;
+        hitsCell.appendChild(chip);
+      }
+    } else {
+      hitsCell.appendChild(el("span", null, "—")).style.color = "var(--faint)";
+    }
+    tr.appendChild(hitsCell);
+    tbody.appendChild(tr);
+  }
+}
+
 /* --------------------------------------------------------------- boot */
 async function boot() {
   tickCountdown();
@@ -524,6 +588,7 @@ async function boot() {
   renderLedger(ledger);
   renderCharts(stats);
   renderTactics(weights);
+  renderCommunity(stats);
 }
 
 boot().catch(err => {

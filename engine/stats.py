@@ -162,11 +162,77 @@ def _pnl_summary(entries):
     return out
 
 
-def build(history_draws, live_entries, backtest_entries, weights_state, updated_at):
+def _community_scoreboard(community_doc, results_by_id):
+    """Grade every forum member's posted picks ($0.50 box) and front/back pair
+    calls ($0.50) against actual results — the thread's honest ledger."""
+    from engine import grade as G
+    members = {}
+    def m(name):
+        return members.setdefault(name, {
+            "member": name, "plays": 0, "stake": 0.0, "won": 0.0,
+            "hits": [], "pair_plays": 0, "pair_won": 0.0})
+    for did, entries in (community_doc.get("picks") or {}).items():
+        res = results_by_id.get(did)
+        if not res:
+            continue
+        for e in entries:
+            s = m(e["member"])
+            pick = tuple(e["combo"])
+            s["plays"] += 1
+            s["stake"] += 0.5
+            if G.match(pick, res)["box"]:
+                pay = 250.0 if len(set(pick)) == 1 else (80.0 if len(set(pick)) == 2 else 40.0)
+                s["won"] += pay
+                s["hits"].append({"draw_id": did, "pick": "".join(map(str, pick)),
+                                  "result": "".join(map(str, res))})
+    for did, entries in (community_doc.get("pair_hints") or {}).items():
+        res = results_by_id.get(did)
+        if not res:
+            continue
+        for e in entries:
+            if e.get("kind") not in ("front", "back"):
+                continue
+            s = m(e["member"])
+            dg = tuple(e["digits"])
+            s["pair_plays"] += 1
+            s["stake"] += 0.5
+            hit = (res[0], res[1]) == dg if e["kind"] == "front" else (res[1], res[2]) == dg
+            if hit:
+                s["pair_won"] += 25.0
+                s["hits"].append({"draw_id": did, "pick": f"{dg[0]}{dg[1]}x-{e['kind']}",
+                                  "result": "".join(map(str, res))})
+    out = []
+    for s in members.values():
+        total_won = s["won"] + s["pair_won"]
+        s["net"] = round(total_won - s["stake"], 2)
+        s["won"] = round(total_won, 2)
+        s["stake"] = round(s["stake"], 2)
+        s["roi"] = round(s["net"] / s["stake"], 4) if s["stake"] else 0.0
+        s["hits"] = s["hits"][-5:]
+        del s["pair_won"]
+        out.append(s)
+    out.sort(key=lambda s: -s["net"])
+    total_stake = round(sum(s["stake"] for s in out), 2)
+    total_won = round(sum(s["won"] for s in out), 2)
+    return {
+        "members": out,
+        "total": {"stake": total_stake, "won": total_won,
+                  "net": round(total_won - total_stake, 2),
+                  "roi": round((total_won - total_stake) / total_stake, 4) if total_stake else 0.0},
+        "random_ev_roi": -0.52,
+        "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. "
+                "Attributed to draws within 48h after posting.",
+    }
+
+
+def build(history_draws, live_entries, backtest_entries, weights_state, updated_at,
+          community_doc=None):
     from engine.tactics import TACTICS
+    results_by_id = {d["id"]: tuple(d["digits"]) for d in history_draws}
     return {
         "updated_at": updated_at,
         "scoreboard": {"live": _scoreboard(live_entries)},
+        "community": _community_scoreboard(community_doc or {}, results_by_id),
         "pnl": {
             "headline": "all_box",
             "structures": STRUCTURES,
