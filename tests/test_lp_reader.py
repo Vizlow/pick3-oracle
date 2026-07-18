@@ -258,3 +258,24 @@ def test_community_tactic_scores_pair_calls():
     assert scores[lmath.idx((8, 0, 0))] > 0      # ...and 800
     assert scores[lmath.idx((0, 8, 9))] == 0.0   # front pair is positional
     assert scores[lmath.idx((2, 1, 6))] > scores[lmath.idx((8, 0, 9))]  # full pick > pair
+
+
+# ------------------------------------------------------------- member skill
+def test_member_skills_shrinkage_and_no_lookahead():
+    from engine import skill, timeutil
+    doc = {"picks": {
+        "2026-07-10-mid": [{"member": "hot", "combo": [1, 2, 3]},
+                           {"member": "cold", "combo": [7, 8, 9]}],
+        "2026-07-11-mid": [{"member": "hot", "combo": [4, 5, 6]}],
+    }, "pair_hints": {}}
+    results = {"2026-07-10-mid": (3, 2, 1), "2026-07-11-mid": (0, 0, 0)}
+    skills = skill.member_skills(doc, results)
+    # hot boxed a hit ($40 on $1 staked) -> above 1.0 but shrunk well below cap
+    assert 1.0 < skills["hot"] < 3.0
+    assert skills["cold"] < 1.0 or skills["cold"] == 0.5 or skills["cold"] < skills["hot"]
+    # unknown member -> absent (callers default to 1.0)
+    assert "nobody" not in skills
+    # before_key excludes the hit draw -> hot loses the credit
+    key = timeutil.sort_key("2026-07-10-mid")
+    skills_before = skill.member_skills(doc, results, before_key=key)
+    assert "hot" not in skills_before or skills_before["hot"] <= 1.0

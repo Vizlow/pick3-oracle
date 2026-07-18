@@ -165,51 +165,42 @@ def _pnl_summary(entries):
 def _community_scoreboard(community_doc, results_by_id):
     """Grade every forum member's posted picks ($0.50 box) and front/back pair
     calls ($0.50) against actual results — the thread's honest ledger."""
-    from engine import grade as G
+    from engine import skill as SK
     members = {}
     def m(name):
         return members.setdefault(name, {
             "member": name, "plays": 0, "stake": 0.0, "won": 0.0,
-            "hits": [], "pair_plays": 0, "pair_won": 0.0})
-    for did, entries in (community_doc.get("picks") or {}).items():
-        res = results_by_id.get(did)
-        if not res:
-            continue
-        for e in entries:
-            s = m(e["member"])
-            pick = tuple(e["combo"])
-            s["plays"] += 1
-            s["stake"] += 0.5
-            if G.match(pick, res)["box"]:
-                pay = 250.0 if len(set(pick)) == 1 else (80.0 if len(set(pick)) == 2 else 40.0)
-                s["won"] += pay
-                s["hits"].append({"draw_id": did, "pick": "".join(map(str, pick)),
-                                  "result": "".join(map(str, res))})
-    for did, entries in (community_doc.get("pair_hints") or {}).items():
-        res = results_by_id.get(did)
-        if not res:
-            continue
-        for e in entries:
-            if e.get("kind") not in ("front", "back"):
+            "hits": [], "pair_plays": 0})
+    for section in ("picks", "pair_hints"):
+        for did, entries in (community_doc.get(section) or {}).items():
+            res = results_by_id.get(did)
+            if not res:
                 continue
-            s = m(e["member"])
-            dg = tuple(e["digits"])
-            s["pair_plays"] += 1
-            s["stake"] += 0.5
-            hit = (res[0], res[1]) == dg if e["kind"] == "front" else (res[1], res[2]) == dg
-            if hit:
-                s["pair_won"] += 25.0
-                s["hits"].append({"draw_id": did, "pick": f"{dg[0]}{dg[1]}x-{e['kind']}",
-                                  "result": "".join(map(str, res))})
+            for e in entries:
+                stake, won = SK.grade_entry(e, res)
+                if stake == 0.0:
+                    continue
+                s = m(e["member"])
+                s["stake"] += stake
+                s["won"] += won
+                if "combo" in e:
+                    s["plays"] += 1
+                    label = "".join(map(str, e["combo"]))
+                else:
+                    s["pair_plays"] += 1
+                    label = f"{e['digits'][0]}{e['digits'][1]}x-{e['kind']}"
+                if won:
+                    s["hits"].append({"draw_id": did, "pick": label,
+                                      "result": "".join(map(str, res))})
+    skills = SK.member_skills(community_doc, results_by_id)
     out = []
     for s in members.values():
-        total_won = s["won"] + s["pair_won"]
-        s["net"] = round(total_won - s["stake"], 2)
-        s["won"] = round(total_won, 2)
+        s["net"] = round(s["won"] - s["stake"], 2)
+        s["won"] = round(s["won"], 2)
         s["stake"] = round(s["stake"], 2)
         s["roi"] = round(s["net"] / s["stake"], 4) if s["stake"] else 0.0
+        s["skill"] = skills.get(s["member"], 1.0)
         s["hits"] = s["hits"][-5:]
-        del s["pair_won"]
         out.append(s)
     out.sort(key=lambda s: -s["net"])
     total_stake = round(sum(s["stake"] for s in out), 2)

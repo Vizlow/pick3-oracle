@@ -17,7 +17,7 @@ import sys
 import time
 from datetime import datetime, timezone
 
-from engine import ensemble, fetch, grade, stats, store, timeutil, weights
+from engine import ensemble, fetch, grade, skill, stats, store, timeutil, weights
 from engine.tactics import Ctx
 
 ENGINE_VERSION = "1.0.0"
@@ -62,9 +62,14 @@ class State:
 
     def ctx_for(self, draw_id):
         d, period = timeutil.parse_draw_id(draw_id)
-        picks = list(self.community.get("picks", {}).get(draw_id, []))
+        key = timeutil.sort_key(draw_id)
+        results = {dr["id"]: tuple(dr["digits"]) for dr in self.draws
+                   if timeutil.sort_key(dr["id"]) < key}
+        skills = skill.member_skills(self.community, results, before_key=key)
+        picks = [dict(e, skill=skills.get(e.get("member"), 1.0))
+                 for e in self.community.get("picks", {}).get(draw_id, [])]
         picks += [
-            {"member": e.get("member"),
+            {"member": e.get("member"), "skill": skills.get(e.get("member"), 1.0),
              "pair": {"kind": e.get("kind"), "digits": e.get("digits")}}
             for e in self.community.get("pair_hints", {}).get(draw_id, [])
         ]

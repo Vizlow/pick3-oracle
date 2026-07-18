@@ -18,12 +18,19 @@ _PAIR_POSITIONS = {"front": (0, 1), "back": (1, 2), "split": (0, 2)}
 
 @tactic("community")
 def community(ctx):
-    """Each picked combo scores 1.0 + 0.25 per extra member picking it (cap 2.0);
-    its boxed arrangements score 0.5x that. Pair calls ("80x" = front, "x01" =
-    back, "8x1" = split) score their 10 matching straights at 0.6 + 0.2 per
-    extra member (cap 1.2). No picks -> all zeros."""
+    """Each picked combo scores the SUM of its pickers' skill multipliers
+    (cap 3.0) — a proven caller like a hot streak member counts ~2-3x a
+    neutral one (skill attached by pipeline.ctx_for, Bayesian-shrunk, computed
+    only from draws before the target). Boxed arrangements score 0.5x. Pair
+    calls ("80x" front / "x01" back) score their 10 straights at 0.6x summed
+    skill (cap 1.8). No picks -> all zeros."""
     if not ctx.community:
         return [0.0] * 1000
+
+    def skill_of(item):
+        s = item.get("skill", 1.0) if isinstance(item, dict) else 1.0
+        return s if isinstance(s, (int, float)) and s > 0 else 1.0
+
     members, pair_members = {}, {}
     for item in ctx.community:
         if isinstance(item, dict) and "pair" in item:
@@ -33,7 +40,7 @@ def community(ctx):
             except (TypeError, ValueError, KeyError):
                 continue
             if key[0] in _PAIR_POSITIONS and len(key[1]) == 2:
-                pair_members.setdefault(key, set()).add(item.get("member"))
+                pair_members.setdefault(key, {})[item.get("member")] = skill_of(item)
             continue
         try:
             member, combo = _extract(item)
@@ -41,10 +48,10 @@ def community(ctx):
             continue
         if len(combo) != 3 or any(d < 0 or d > 9 for d in combo):
             continue
-        members.setdefault(combo, set()).add(member)
+        members.setdefault(combo, {})[member] = skill_of(item)
     weights = {}
     for (kind, digits), who in pair_members.items():
-        w = min(0.6 + 0.2 * (len(who) - 1), 1.2)
+        w = min(0.6 * sum(who.values()), 1.8)
         i, j = _PAIR_POSITIONS[kind]
         k = 3 - i - j
         for z in range(10):
@@ -54,7 +61,7 @@ def community(ctx):
             combo = tuple(combo)
             weights[combo] = max(weights.get(combo, 0.0), w)
     for combo, who in members.items():
-        w = min(1.0 + 0.25 * (len(who) - 1), 2.0)
+        w = min(sum(who.values()), 3.0)
         weights[combo] = max(weights.get(combo, 0.0), w)
         for perm in set(permutations(combo)):
             if perm != combo:

@@ -153,11 +153,20 @@ def test_community_single_pick_argmax():
 def test_community_multi_member_and_cap():
     picks = [{"member": m, "combo": [7, 7, 8]} for m in "abcdefgh"]  # 8 members
     scores = TACTICS["community"](make_ctx([], community=picks))
-    assert scores[lmath.idx((7, 7, 8))] == pytest.approx(2.0)  # 1 + 0.25*7 capped
-    assert scores[lmath.idx((8, 7, 7))] == pytest.approx(1.0)
+    assert scores[lmath.idx((7, 7, 8))] == pytest.approx(3.0)  # sum of skills, capped
+    assert scores[lmath.idx((8, 7, 7))] == pytest.approx(1.5)  # 0.5x perm coverage
     two = [{"member": "a", "combo": [1, 2, 3]}, {"member": "b", "combo": [1, 2, 3]}]
     scores = TACTICS["community"](make_ctx([], community=two))
-    assert scores[lmath.idx((1, 2, 3))] == pytest.approx(1.25)
+    assert scores[lmath.idx((1, 2, 3))] == pytest.approx(2.0)  # 1.0 + 1.0
+
+
+def test_community_skill_weighting():
+    picks = [{"member": "hot", "combo": [1, 2, 3], "skill": 2.5},
+             {"member": "cold", "combo": [4, 5, 6], "skill": 0.5}]
+    scores = TACTICS["community"](make_ctx([], community=picks))
+    assert scores[lmath.idx((1, 2, 3))] == pytest.approx(2.5)
+    assert scores[lmath.idx((4, 5, 6))] == pytest.approx(0.5)
+    assert scores[lmath.idx((1, 2, 3))] > scores[lmath.idx((4, 5, 6))]
 
 
 def test_community_empty_and_malformed():

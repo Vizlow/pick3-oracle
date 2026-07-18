@@ -554,6 +554,10 @@ function renderCommunity(stats) {
     tr.appendChild(el("td", "num", fmtMoney(m.won)));
     tr.appendChild(el("td", "num " + (m.net >= 0 ? "pos" : "neg"), fmtMoney(m.net)));
     tr.appendChild(el("td", "num " + (m.roi >= 0 ? "pos" : "neg"), fmtPct(m.roi)));
+    const sk = m.skill != null ? m.skill : 1.0;
+    const skCell = el("td", "num " + (sk > 1.05 ? "pos" : sk < 0.95 ? "neg" : ""), `${sk.toFixed(2)}×`);
+    skCell.title = "How much the engine currently trusts this member's picks (Bayesian-shrunk vs chance)";
+    tr.appendChild(skCell);
     const hitsCell = el("td");
     if (m.hits && m.hits.length) {
       for (const h of m.hits) {

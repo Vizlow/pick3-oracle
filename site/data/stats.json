@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-18T20:40:07Z",
+ "updated_at": "2026-07-18T21:19:07Z",
  "scoreboard": {
   "live": {
    "n_draws": 3,
@@ -60,7 +60,8 @@
     ],
     "pair_plays": 19,
     "net": 70.5,
-    "roi": 3.6154
+    "roi": 3.6154,
+    "skill": 2.406
    },
    {
     "member": "forum-report",
@@ -76,7 +77,8 @@
     ],
     "pair_plays": 0,
     "net": 10.0,
-    "roi": 0.3333
+    "roi": 0.3333,
+    "skill": 1.41
    },
    {
     "member": "Ranett",
@@ -86,7 +88,8 @@
     "hits": [],
     "pair_plays": 0,
     "net": -4.0,
-    "roi": -1.0
+    "roi": -1.0,
+    "skill": 0.962
    },
    {
     "member": "Andrew1209",
@@ -96,7 +99,8 @@
     "hits": [],
     "pair_plays": 0,
     "net": -4.0,
-    "roi": -1.0
+    "roi": -1.0,
+    "skill": 0.962
    },
    {
     "member": "JonnyB5775",
@@ -106,7 +110,8 @@
     "hits": [],
     "pair_plays": 0,
     "net": -6.0,
-    "roi": -1.0
+    "roi": -1.0,
+    "skill": 0.943
    },
    {
     "member": "LivingLegacy768",
@@ -116,7 +121,8 @@
     "hits": [],
     "pair_plays": 0,
     "net": -8.0,
-    "roi": -1.0
+    "roi": -1.0,
+    "skill": 0.926
    },
    {
     "member": "DSE086",
@@ -126,7 +132,8 @@
     "hits": [],
     "pair_plays": 0,
     "net": -10.0,
-    "roi": -1.0
+    "roi": -1.0,
+    "skill": 0.909
    },
    {
     "member": "Cbullard242",
@@ -136,7 +143,8 @@
     "hits": [],
     "pair_plays": 0,
     "net": -12.0,
-    "roi": -1.0
+    "roi": -1.0,
+    "skill": 0.893
    },
    {
     "member": "LottoIntuitive",
@@ -146,7 +154,8 @@
     "hits": [],
     "pair_plays": 0,
     "net": -20.0,
-    "roi": -1.0
+    "roi": -1.0,
+    "skill": 0.833
    },
    {
     "member": "Gameover44",
@@ -162,7 +171,8 @@
     ],
     "pair_plays": 102,
     "net": -26.0,
-    "roi": -0.5098
+    "roi": -0.5098,
+    "skill": 1.007
    },
    {
     "member": "sully16",
@@ -183,7 +193,8 @@
     ],
     "pair_plays": 0,
     "net": -54.5,
-    "roi": -0.4052
+    "roi": -0.4052,
+    "skill": 1.137
    }
   ],
   "total": {
