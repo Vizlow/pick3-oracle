@@ -279,3 +279,33 @@ def test_member_skills_shrinkage_and_no_lookahead():
     key = timeutil.sort_key("2026-07-10-mid")
     skills_before = skill.member_skills(doc, results, before_key=key)
     assert "hot" not in skills_before or skills_before["hot"] <= 1.0
+
+
+# ------------------------------------------------------------- list lifetimes
+def test_valid_until_day_sequence_sully_style():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from community.lp_reader import valid_until, draws_for_post
+    ET = ZoneInfo("America/New_York")
+    text = ("Thank you Andrew1209, congrats NY216, Soledad and all winners.\n"
+            "Fri./Sat./Sun./Mon.\n270 271 272\n007 107 207\ngood luck")
+    posted = datetime(2026, 7, 17, 3, 7, tzinfo=ET)  # a Friday
+    until = valid_until(text, posted)
+    assert until is not None and until.date().isoformat() == "2026-07-20"  # Monday
+    dids = draws_for_post(posted, until=until)
+    assert "2026-07-19-eve" in dids and "2026-07-20-eve" in dids
+    assert "2026-07-21-mid" not in dids
+
+
+def test_valid_until_till_sunday_and_default():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from community.lp_reader import valid_until, draws_for_post
+    ET = ZoneInfo("America/New_York")
+    posted = datetime(2026, 7, 15, 19, 10, tzinfo=ET)  # Wednesday evening
+    until = valid_until("I like till sunday.\n617. 117. 177\nGood luck", posted)
+    assert until is not None and until.date().isoformat() == "2026-07-19"
+    # no declaration -> default 48h window unchanged
+    assert valid_until("617 117 177 good luck", posted) is None
+    dids = draws_for_post(posted)
+    assert dids[0] == "2026-07-15-eve" and len(dids) == 4

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-19T05:45:52Z",
+ "updated_at": "2026-07-19T05:47:48Z",
  "scoreboard": {
   "live": {
    "n_draws": 4,
@@ -108,17 +108,6 @@
     "skill": 0.962
    },
    {
-    "member": "JonnyB5775",
-    "plays": 12,
-    "stake": 6.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 0,
-    "net": -6.0,
-    "roi": -1.0,
-    "skill": 0.943
-   },
-   {
     "member": "LivingLegacy768",
     "plays": 16,
     "stake": 8.0,
@@ -139,6 +128,17 @@
     "net": -10.0,
     "roi": -1.0,
     "skill": 0.909
+   },
+   {
+    "member": "JonnyB5775",
+    "plays": 21,
+    "stake": 10.5,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -10.5,
+    "roi": -1.0,
+    "skill": 0.905
    },
    {
     "member": "Cbullard242",
@@ -203,10 +203,10 @@
    }
   ],
   "total": {
-   "stake": 296.5,
+   "stake": 301.0,
    "won": 275.0,
-   "net": -21.5,
-   "roi": -0.0725
+   "net": -26.0,
+   "roi": -0.0864
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."

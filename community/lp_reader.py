@@ -411,10 +411,53 @@ def extract_pair_hints(text):
 # ------------------------------------------------------------------ attribution
 
 
-def draws_for_post(posted_at, window_hours=ATTRIBUTION_WINDOW_HOURS):
-    """Draw ids strictly after posted_at and within window_hours of it."""
+_DAY_NAMES = {
+    "mon": 0, "tue": 1, "tues": 1, "wed": 2, "thu": 3, "thur": 3, "thurs": 3,
+    "fri": 4, "sat": 5, "sun": 6,
+}
+_DAY_RE = re.compile(
+    r"\b(mon|tues|tue|wed|thurs|thur|thu|fri|sat|sun)(?:day|sday|nesday|urday|rday)?\b\.?",
+    re.IGNORECASE)
+_TILL_RE = re.compile(r"\b(?:till|until|through|thru)\s+"
+                      r"(mon|tues|tue|wed|thurs|thur|thu|fri|sat|sun)", re.IGNORECASE)
+MAX_WINDOW_DAYS = 7
+
+
+def valid_until(text, posted_at):
+    """Players declare list lifetimes ("Fri./Sat./Sun./Mon.", "till sunday",
+    "all week"). Returns an ET datetime through which the post's picks apply,
+    or None for the default window. Capped at MAX_WINDOW_DAYS."""
     posted_at = posted_at.astimezone(ET)
-    limit = posted_at + timedelta(hours=window_hours)
+    text = text or ""
+    days = None
+    m = _TILL_RE.search(text)
+    if m:
+        days = [_DAY_NAMES[m.group(1).lower()]]
+    else:
+        toks = _DAY_RE.findall(text[:200])  # declarations sit at the top of a post
+        if len(toks) >= 2:
+            days = [_DAY_NAMES[t.lower()] for t in toks]
+    if days is None:
+        if re.search(r"\b(?:all|this|the)\s+week\b", text, re.IGNORECASE):
+            end = posted_at + timedelta(days=MAX_WINDOW_DAYS)
+            return end.replace(hour=23, minute=0)
+        return None
+    # walk forward day by day, consuming the declared days in order
+    cur = posted_at.date()
+    for want in days:
+        while cur.weekday() != want:
+            cur += timedelta(days=1)
+            if (cur - posted_at.date()).days > MAX_WINDOW_DAYS:
+                return None  # unparseable sequence — fall back to default
+    return datetime.combine(cur, time(23, 0), tzinfo=ET)
+
+
+def draws_for_post(posted_at, window_hours=ATTRIBUTION_WINDOW_HOURS, until=None):
+    """Draw ids strictly after posted_at, within window_hours — or through
+    `until` when the post declared its own lifetime."""
+    posted_at = posted_at.astimezone(ET)
+    limit = until if until is not None else posted_at + timedelta(hours=window_hours)
+    limit = min(limit, posted_at + timedelta(days=MAX_WINDOW_DAYS))
     d, p = timeutil.latest_expected_draw(posted_at)  # last draw <= posted_at
     out = []
     while True:
@@ -435,7 +478,8 @@ def attribute_posts(posts):
         if not combos:
             continue
         posted_at = datetime.fromisoformat(post["posted_at"])
-        for did in draws_for_post(posted_at):
+        until = valid_until(post["text"], posted_at)
+        for did in draws_for_post(posted_at, until=until):
             for combo in combos:
                 entries.append(
                     (did, {"member": post["member"], "combo": combo, "posted_at": post["posted_at"]})
@@ -451,7 +495,8 @@ def attribute_pair_hints(posts):
         if not hints:
             continue
         posted_at = datetime.fromisoformat(post["posted_at"])
-        for did in draws_for_post(posted_at):
+        until = valid_until(post["text"], posted_at)
+        for did in draws_for_post(posted_at, until=until):
             for h in hints:
                 entries.append(
                     (did, {"member": post["member"], "kind": h["kind"],
