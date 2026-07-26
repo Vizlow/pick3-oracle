@@ -1,33 +1,11 @@
 {
- "updated_at": "2026-07-25T19:44:01+00:00",
+ "updated_at": "2026-07-26T05:45:06+00:00",
  "thread": {
   "id": 360017,
   "title": "New York: 7/1 - 7/31/2026",
   "url": "https://www.lotterypost.com/thread/360017"
  },
  "picks": {
-  "2026-07-11-mid": [
-   {
-    "member": "sully16",
-    "combo": [
-     7,
-     6,
-     8
-    ],
-    "posted_at": "2026-07-10T03:27:00-04:00"
-   }
-  ],
-  "2026-07-11-eve": [
-   {
-    "member": "sully16",
-    "combo": [
-     7,
-     6,
-     8
-    ],
-    "posted_at": "2026-07-10T03:27:00-04:00"
-   }
-  ],
   "2026-07-12-mid": [
    {
     "member": "Cbullard242",
@@ -7047,100 +7025,6 @@
   ]
  },
  "pair_hints": {
-  "2026-07-11-mid": [
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     7,
-     7
-    ],
-    "posted_at": "2026-07-10T08:48:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     3,
-     3
-    ],
-    "posted_at": "2026-07-10T08:48:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     5,
-     5
-    ],
-    "posted_at": "2026-07-10T08:48:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     9,
-     9
-    ],
-    "posted_at": "2026-07-11T08:10:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     1,
-     1
-    ],
-    "posted_at": "2026-07-11T08:10:00-04:00"
-   }
-  ],
-  "2026-07-11-eve": [
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     7,
-     7
-    ],
-    "posted_at": "2026-07-10T08:48:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     3,
-     3
-    ],
-    "posted_at": "2026-07-10T08:48:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     5,
-     5
-    ],
-    "posted_at": "2026-07-10T08:48:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     9,
-     9
-    ],
-    "posted_at": "2026-07-11T08:10:00-04:00"
-   },
-   {
-    "member": "Gameover44",
-    "kind": "front",
-    "digits": [
-     1,
-     1
-    ],
-    "posted_at": "2026-07-11T08:10:00-04:00"
-   }
-  ],
   "2026-07-12-mid": [
    {
     "member": "Gameover44",
