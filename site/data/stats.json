@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T05:23:08Z",
+ "updated_at": "2026-07-30T12:15:09Z",
  "scoreboard": {
   "live": {
    "n_draws": 26,
@@ -138,7 +138,7 @@
    {
     "member": "Gameover44",
     "plays": 0,
-    "stake": 63.0,
+    "stake": 64.0,
     "won": 25.0,
     "hits": [
      {
@@ -147,10 +147,10 @@
       "result": "338"
      }
     ],
-    "pair_plays": 126,
-    "net": -38.0,
-    "roi": -0.6032,
-    "skill": 0.933
+    "pair_plays": 128,
+    "net": -39.0,
+    "roi": -0.6094,
+    "skill": 0.927
    },
    {
     "member": "sully16",
@@ -186,10 +186,10 @@
    }
   ],
   "total": {
-   "stake": 481.5,
+   "stake": 482.5,
    "won": 330.0,
-   "net": -151.5,
-   "roi": -0.3146
+   "net": -152.5,
+   "roi": -0.3161
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
