@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-03T05:56:29+00:00",
+ "updated_at": "2026-08-03T13:30:13+00:00",
  "draws": [
   {
    "id": "1980-09-02-eve",
@@ -333315,7 +333315,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23254,
-   "fetched_at": "2026-08-01T19:44:01+00:00"
+   "fetched_at": "2026-08-01T19:44:01+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-08-01-eve",
@@ -333328,7 +333329,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23255,
-   "fetched_at": "2026-08-02T05:40:40+00:00"
+   "fetched_at": "2026-08-02T05:40:40+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-08-02-mid",
@@ -333341,7 +333343,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23256,
-   "fetched_at": "2026-08-02T19:43:42+00:00"
+   "fetched_at": "2026-08-02T19:43:42+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-08-02-eve",
@@ -333354,7 +333357,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23257,
-   "fetched_at": "2026-08-03T05:56:28+00:00"
+   "fetched_at": "2026-08-03T05:56:28+00:00",
+   "reconciled": true
   }
  ]
 }
