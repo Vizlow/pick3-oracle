@@ -171,6 +171,10 @@ td.num, th.num { text-align: right; font-family: var(--mono); }
 .chip-eve { color: var(--purple); border-color: rgba(177, 140, 255, 0.5); background: rgba(177, 140, 255, 0.08); }
 .chip-live { color: var(--teal); border-color: rgba(47, 214, 195, 0.5); }
 .chip-bt { color: var(--faint); }
+.chip-signal { color: var(--teal); border-color: rgba(47, 214, 195, 0.5); background: rgba(47, 214, 195, 0.08); }
+.chip-noise { color: var(--faint); }
+.chip-inverse { color: var(--red, #ff6371); border-color: rgba(255, 99, 113, 0.5); background: rgba(255, 99, 113, 0.08); }
+#patternlab-headlines { margin: 10px 0 0; padding-left: 18px; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .badge { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.06em; padding: 2px 7px; border-radius: 6px; margin-right: 4px; }
 .badge-str { background: var(--green); color: #04160c; }
 .badge-box { border: 1px solid var(--green); color: var(--green); }
@@ -222,6 +226,7 @@ td.num, th.num { text-align: right; font-family: var(--mono); }
 .tactic-row .rank { color: var(--faint); font-family: var(--mono); font-size: 11px; }
 .tactic-row .tname { font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
 .tactic-row .tname .seen { display: block; font-size: 10px; color: var(--faint); font-weight: 400; }
+.tactic-row .tname .chip { margin-top: 3px; }
 .ewma-bar { position: relative; height: 12px; background: var(--bg); border: 1px solid var(--line-soft); border-radius: 6px; overflow: hidden; }
 .ewma-bar .mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--line); }
 .ewma-bar .fill { position: absolute; top: 2px; bottom: 2px; border-radius: 4px; }

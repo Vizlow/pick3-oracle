@@ -1,0 +1,136 @@
+{
+ "generated_at": "2026-08-07T05:17:36+00:00",
+ "as_of_draw": "2026-08-06-eve",
+ "window": 4000,
+ "fdr_q": 0.1,
+ "battery": {
+  "n_tests": 81,
+  "n_significant": 0,
+  "significant_ids": []
+ },
+ "tactics": {
+  "carryover": {
+   "z": -0.177,
+   "q": 0.956,
+   "verdict": "noise"
+  },
+  "datesum_key": {
+   "z": -1.46,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "due_digits": {
+   "z": 1.119,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "follower_digit": {
+   "z": -2.0,
+   "q": 0.5457,
+   "verdict": "noise"
+  },
+  "follower_pair": {
+   "z": -0.704,
+   "q": 0.6798,
+   "verdict": "noise"
+  },
+  "hot_digits": {
+   "z": -0.71,
+   "q": 0.6798,
+   "verdict": "noise"
+  },
+  "mirror_cloud": {
+   "z": -1.249,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "pair_due": {
+   "z": 1.107,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "pattern_balance": {
+   "z": 0.659,
+   "q": 0.6801,
+   "verdict": "noise"
+  },
+  "rundown_111": {
+   "z": -1.131,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "rundown_123_stack": {
+   "z": 0.347,
+   "q": 0.8747,
+   "verdict": "noise"
+  },
+  "rundown_317": {
+   "z": -0.393,
+   "q": 0.8747,
+   "verdict": "noise"
+  },
+  "rundown_pi": {
+   "z": 0.107,
+   "q": 0.956,
+   "verdict": "noise"
+  },
+  "structure_due": {
+   "z": -1.06,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "sum_due": {
+   "z": 0.939,
+   "q": 0.5963,
+   "verdict": "noise"
+  },
+  "ttt_mirror": {
+   "z": -2.342,
+   "q": 0.4602,
+   "verdict": "noise"
+  },
+  "ttt_plus1": {
+   "z": -1.405,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "vtrac_due": {
+   "z": 1.191,
+   "q": 0.5627,
+   "verdict": "noise"
+  },
+  "vtrac_return": {
+   "z": -1.76,
+   "q": 0.5627,
+   "verdict": "noise"
+  }
+ },
+ "ensemble": {
+  "fused_equal": {
+   "z": -1.026,
+   "verdict": "noise"
+  },
+  "fused_learned": {
+   "z": -1.036,
+   "verdict": "noise"
+  },
+  "top5_picks_box": {
+   "z": -0.034,
+   "verdict": "noise"
+  },
+  "pairs_front": {
+   "z": 0.159,
+   "verdict": "noise"
+  },
+  "pairs_back": {
+   "z": 0.795,
+   "verdict": "noise"
+  }
+ },
+ "headlines": [
+  "Draw bias battery: 0 of 81 tests significant after FDR \u2014 draws look uniform",
+  "Tactic skill: 0 of 19 tactics beat their empirical null \u2014 all noise, as honest math predicts",
+  "Ensemble: learned-weights z=-1.036, equal-weights z=-1.026 \u2014 weight learning adds nothing measurable",
+  "Top-5 picks hit boxes at 3.0% per draw vs 3.0% coverage ceiling (z=-0.034)"
+ ]
+}

@@ -13,11 +13,16 @@ from engine import ensemble, grade, stats, store, timeutil, weights
 from engine.tactics import Ctx
 
 
-def run(n_draws=730, history=None, progress=False):
+def run(n_draws=730, history=None, progress=False, on_step=None, params=None):
+    """Walk-forward replay. `params` (dict of alpha/tau/floor_frac) seeds
+    weights.fresh_state for tuning runs. `on_step(step)` fires after predict and
+    before weights.update with the step's ctx/scores/prediction/result and the
+    weight map the prediction was made under — analysis instrumentation rides
+    the one loop whose no-look-ahead sequencing is already sentinel-tested."""
     history = history if history is not None else store.load_history()
     if len(history) < n_draws + 50:
         raise SystemExit(f"need >= {n_draws + 50} draws of history, have {len(history)}")
-    state = weights.fresh_state()
+    state = weights.fresh_state(**(params or {}))
     entries = []
     start = len(history) - n_draws
     combos = [tuple(d["digits"]) for d in history]
@@ -31,6 +36,9 @@ def run(n_draws=730, history=None, progress=False):
         result = combos[t]
         lock = {"sha": None, "committed_at": None, "hours_before_draw": None}
         entries.append(grade.ledger_entry(prediction, list(result), lock, mode="backtest"))
+        if on_step is not None:
+            on_step({"t": t, "draw_id": target["id"], "ctx": ctx, "scores": scores,
+                     "prediction": prediction, "result": result, "weights_before": wmap})
         weights.update(state, scores, result, updated_at=target["date"])
         if progress and (t - start) % 100 == 0:
             print(f"  {t - start}/{n_draws} ({time.time() - t0:.0f}s)")

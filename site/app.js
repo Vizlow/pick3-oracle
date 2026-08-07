@@ -473,9 +473,10 @@ function renderCharts(stats) {
 }
 
 /* --------------------------------------------------------------- tactics */
-function renderTactics(weights) {
+function renderTactics(weights, analysis) {
   const p = weights.params;
   $("#tactics-params").textContent = `α=${p.alpha} · τ=${p.tau} · floor=${p.floor_frac}`;
+  const verdicts = (analysis && analysis.tactics) || {};
   const rows = $("#tactic-rows");
   rows.innerHTML = "";
   const keys = Object.keys(weights.tactics).sort((a, b) => weights.tactics[b].weight - weights.tactics[a].weight);
@@ -488,6 +489,12 @@ function renderTactics(weights) {
 
     const name = el("span", "tname", tacticName(key));
     name.appendChild(el("span", "seen", `${t.draws_seen} draws seen`));
+    const v = verdicts[key];
+    if (v) {
+      const chip = el("span", `chip chip-${v.verdict}`, v.verdict);
+      chip.title = `deep analysis: z=${v.z}, q=${v.q} over last ${(analysis && analysis.window) || "?"} draws`;
+      name.appendChild(chip);
+    }
     rowEl.appendChild(name);
 
     const barWrap = el("div");
@@ -508,6 +515,18 @@ function renderTactics(weights) {
     rowEl.appendChild(sparkWrap);
     rows.appendChild(rowEl);
   });
+}
+
+/* --------------------------------------------------------------- pattern lab */
+function renderPatternLab(analysis) {
+  if (!analysis || !analysis.headlines || !analysis.headlines.length) return;
+  $("#patternlab-panel").hidden = false;
+  const b = analysis.battery || {};
+  $("#patternlab-meta").textContent =
+    `${b.n_significant != null ? b.n_significant : "?"} of ${b.n_tests != null ? b.n_tests : "?"} bias tests significant after FDR (q<${analysis.fdr_q}) · as of ${analysis.as_of_draw}`;
+  const list = $("#patternlab-headlines");
+  list.innerHTML = "";
+  analysis.headlines.forEach(h => list.appendChild(el("li", null, h)));
 }
 
 /* --------------------------------------------------------------- community */
@@ -577,13 +596,14 @@ function renderCommunity(stats) {
 async function boot() {
   tickCountdown();
   setInterval(tickCountdown, 1000);
-  const [draws, prediction, ledger, weights, stats, community] = await Promise.all([
+  const [draws, prediction, ledger, weights, stats, community, analysis] = await Promise.all([
     fetchJSON("draws.json"),
     fetchJSON("prediction.json"),
     fetchJSON("ledger.json"),
     fetchJSON("weights.json"),
     fetchJSON("stats.json"),
     fetchJSON("community.json", true), // optional — 404 is fine
+    fetchJSON("analysis.json", true),  // optional — 404 is fine
   ]);
   renderHeader(draws);
   renderNow(prediction, community);
@@ -591,7 +611,8 @@ async function boot() {
   renderPnl(stats);
   renderLedger(ledger);
   renderCharts(stats);
-  renderTactics(weights);
+  renderTactics(weights, analysis);
+  renderPatternLab(analysis);
   renderCommunity(stats);
 }
 
