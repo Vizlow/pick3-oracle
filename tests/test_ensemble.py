@@ -31,7 +31,8 @@ def test_select_picks_diversity_and_determinism():
     picks = ensemble.select_picks(fused)
     assert len(picks) == 5
     box_keys = [lmath.box_key(p) for p in picks]
-    assert box_keys.count((1, 2, 3)) == 2  # capped at 2, not 5
+    assert box_keys.count((1, 2, 3)) == 1  # one slot per box — no wasted coverage
+    assert len(set(box_keys)) == 5  # all five picks are distinct boxes
     assert picks == ensemble.select_picks(fused)  # deterministic
 
 

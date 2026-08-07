@@ -65,8 +65,13 @@ def fuse(scores_by_tactic, weights_by_tactic):
     return fused
 
 
-def select_picks(fused, n=5, max_per_box=2):
-    """Greedy top-N with a boxed-key diversity cap; deterministic tie-break by index."""
+def select_picks(fused, n=5, max_per_box=1):
+    """Greedy top-N with a boxed-key diversity cap; deterministic tie-break by index.
+
+    max_per_box=1: two straights of the same box add only 1/1000 straight coverage
+    but forfeit a whole distinct box (6/1000). Tactics score mostly box-symmetric,
+    so permutation near-ties are common — without the cap at 1, ~80% of live draws
+    spent two of five slots on the same box (2.3% realized box rate vs 2.95% max)."""
     order = sorted(range(1000), key=lambda i: (-fused[i], i))
     picks, box_counts = [], {}
     for i in order:
