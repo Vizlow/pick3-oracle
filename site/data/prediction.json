@@ -1,37 +1,37 @@
 {
- "draw_id": "2026-08-09-mid",
- "generated_at": "2026-08-09T03:57:14Z",
+ "draw_id": "2026-08-09-eve",
+ "generated_at": "2026-08-09T19:11:28Z",
  "picks": [
   [
-   2,
-   4,
-   8
-  ],
-  [
-   5,
-   7,
-   1
-  ],
-  [
-   7,
-   4,
-   8
-  ],
-  [
-   4,
+   0,
    3,
    7
   ],
   [
-   8,
+   5,
    7,
-   5
+   0
+  ],
+  [
+   0,
+   7,
+   4
+  ],
+  [
+   0,
+   9,
+   2
+  ],
+  [
+   5,
+   7,
+   4
   ]
  ],
  "top_pick": [
-  2,
-  4,
-  8
+  0,
+  3,
+  7
  ],
  "pairs": {
   "front": [
@@ -46,9 +46,9 @@
  "engine_version": "1.0.0",
  "explain": {
   "top_tactics_for_top_pick": [
-   "rundown_123_stack",
+   "pattern_balance",
    "rundown_317",
-   "community"
+   "rundown_111"
   ]
  }
 }
