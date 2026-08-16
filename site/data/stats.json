@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-16T03:26:26Z",
+ "updated_at": "2026-08-16T10:58:40Z",
  "scoreboard": {
   "live": {
    "n_draws": 60,
@@ -59,6 +59,17 @@
     "skill": 0.98
    },
    {
+    "member": "WISHYOULUCK",
+    "plays": 6,
+    "stake": 3.0,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -3.0,
+    "roi": -1.0,
+    "skill": 0.971
+   },
+   {
     "member": "Soledad",
     "plays": 8,
     "stake": 4.0,
@@ -79,17 +90,6 @@
     "net": -4.0,
     "roi": -1.0,
     "skill": 0.962
-   },
-   {
-    "member": "WISHYOULUCK",
-    "plays": 12,
-    "stake": 6.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 0,
-    "net": -6.0,
-    "roi": -1.0,
-    "skill": 0.943
    },
    {
     "member": "Bigmaine",
@@ -114,20 +114,9 @@
     "skill": 0.943
    },
    {
-    "member": "LottoIntuitive",
-    "plays": 44,
-    "stake": 22.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 0,
-    "net": -22.0,
-    "roi": -1.0,
-    "skill": 0.82
-   },
-   {
     "member": "sully16",
-    "plays": 746,
-    "stake": 373.0,
+    "plays": 684,
+    "stake": 342.0,
     "won": 320.0,
     "hits": [
      {
@@ -157,9 +146,20 @@
      }
     ],
     "pair_plays": 0,
-    "net": -53.0,
-    "roi": -0.1421,
-    "skill": 1.621
+    "net": -22.0,
+    "roi": -0.0643,
+    "skill": 1.735
+   },
+   {
+    "member": "LottoIntuitive",
+    "plays": 44,
+    "stake": 22.0,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -22.0,
+    "roi": -1.0,
+    "skill": 0.82
    },
    {
     "member": "Gameover44",
@@ -200,10 +200,10 @@
    }
   ],
   "total": {
-   "stake": 699.5,
+   "stake": 665.5,
    "won": 520.0,
-   "net": -179.5,
-   "roi": -0.2566
+   "net": -145.5,
+   "roi": -0.2186
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
