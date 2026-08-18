@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-18T03:22:23Z",
+ "updated_at": "2026-08-18T11:01:19Z",
  "scoreboard": {
   "live": {
    "n_draws": 64,
@@ -114,46 +114,9 @@
     "skill": 0.82
    },
    {
-    "member": "sully16",
-    "plays": 732,
-    "stake": 366.0,
-    "won": 320.0,
-    "hits": [
-     {
-      "draw_id": "2026-08-03-mid",
-      "pick": "585",
-      "result": "558"
-     },
-     {
-      "draw_id": "2026-08-11-mid",
-      "pick": "171",
-      "result": "117"
-     },
-     {
-      "draw_id": "2026-08-11-eve",
-      "pick": "575",
-      "result": "557"
-     },
-     {
-      "draw_id": "2026-08-13-mid",
-      "pick": "128",
-      "result": "128"
-     },
-     {
-      "draw_id": "2026-08-14-eve",
-      "pick": "120",
-      "result": "021"
-     }
-    ],
-    "pair_plays": 0,
-    "net": -46.0,
-    "roi": -0.1257,
-    "skill": 1.645
-   },
-   {
     "member": "Gameover44",
     "plays": 451,
-    "stake": 270.5,
+    "stake": 265.5,
     "won": 200.0,
     "hits": [
      {
@@ -182,17 +145,49 @@
       "result": "852"
      }
     ],
-    "pair_plays": 90,
-    "net": -70.5,
-    "roi": -0.2606,
-    "skill": 1.395
+    "pair_plays": 80,
+    "net": -65.5,
+    "roi": -0.2467,
+    "skill": 1.414
+   },
+   {
+    "member": "sully16",
+    "plays": 692,
+    "stake": 346.0,
+    "won": 240.0,
+    "hits": [
+     {
+      "draw_id": "2026-08-11-mid",
+      "pick": "171",
+      "result": "117"
+     },
+     {
+      "draw_id": "2026-08-11-eve",
+      "pick": "575",
+      "result": "557"
+     },
+     {
+      "draw_id": "2026-08-13-mid",
+      "pick": "128",
+      "result": "128"
+     },
+     {
+      "draw_id": "2026-08-14-eve",
+      "pick": "120",
+      "result": "021"
+     }
+    ],
+    "pair_plays": 0,
+    "net": -106.0,
+    "roi": -0.3064,
+    "skill": 1.345
    }
   ],
   "total": {
-   "stake": 692.0,
-   "won": 520.0,
-   "net": -172.0,
-   "roi": -0.2486
+   "stake": 667.0,
+   "won": 440.0,
+   "net": -227.0,
+   "roi": -0.3403
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
