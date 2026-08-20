@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-20T03:24:17Z",
+ "updated_at": "2026-08-20T11:03:05Z",
  "scoreboard": {
   "live": {
    "n_draws": 68,
@@ -37,37 +37,26 @@
  "community": {
   "members": [
    {
-    "member": "Soledad",
-    "plays": 4,
-    "stake": 2.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 0,
-    "net": -2.0,
-    "roi": -1.0,
-    "skill": 0.98
-   },
-   {
     "member": "NY216",
     "plays": 0,
-    "stake": 2.0,
+    "stake": 1.5,
     "won": 0.0,
     "hits": [],
-    "pair_plays": 4,
-    "net": -2.0,
+    "pair_plays": 3,
+    "net": -1.5,
     "roi": -1.0,
-    "skill": 0.98
+    "skill": 0.985
    },
    {
     "member": "Ranett",
-    "plays": 8,
-    "stake": 4.0,
+    "plays": 6,
+    "stake": 3.0,
     "won": 0.0,
     "hits": [],
     "pair_plays": 0,
-    "net": -4.0,
+    "net": -3.0,
     "roi": -1.0,
-    "skill": 0.962
+    "skill": 0.971
    },
    {
     "member": "Andrew1209",
@@ -115,9 +104,9 @@
    },
    {
     "member": "Gameover44",
-    "plays": 566,
-    "stake": 317.0,
-    "won": 240.0,
+    "plays": 498,
+    "stake": 277.0,
+    "won": 200.0,
     "hits": [
      {
       "draw_id": "2026-08-06-mid",
@@ -145,15 +134,15 @@
       "result": "415"
      }
     ],
-    "pair_plays": 68,
+    "pair_plays": 56,
     "net": -77.0,
-    "roi": -0.2429,
-    "skill": 1.439
+    "roi": -0.278,
+    "skill": 1.37
    },
    {
     "member": "sully16",
-    "plays": 692,
-    "stake": 346.0,
+    "plays": 652,
+    "stake": 326.0,
     "won": 240.0,
     "hits": [
      {
@@ -178,16 +167,16 @@
      }
     ],
     "pair_plays": 0,
-    "net": -106.0,
-    "roi": -0.3064,
-    "skill": 1.345
+    "net": -86.0,
+    "roi": -0.2638,
+    "skill": 1.408
    }
   ],
   "total": {
-   "stake": 717.0,
-   "won": 480.0,
-   "net": -237.0,
-   "roi": -0.3305
+   "stake": 653.5,
+   "won": 440.0,
+   "net": -213.5,
+   "roi": -0.3267
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
