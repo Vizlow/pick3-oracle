@@ -1,19 +1,6 @@
 {
- "updated_at": "2026-08-22T10:58:25Z",
+ "updated_at": "2026-08-22T18:58:35Z",
  "draws": [
-  {
-   "id": "2026-02-03-mid",
-   "date": "2026-02-03",
-   "period": "mid",
-   "digits": [
-    8,
-    1,
-    5
-   ],
-   "source": "socrata",
-   "draw_number": null,
-   "fetched_at": "2026-07-17T05:42:20+00:00"
-  },
   {
    "id": "2026-02-03-eve",
    "date": "2026-02-03",
@@ -5290,6 +5277,19 @@
    "draw_number": 23295,
    "fetched_at": "2026-08-22T03:19:59+00:00",
    "reconciled": true
+  },
+  {
+   "id": "2026-08-22-mid",
+   "date": "2026-08-22",
+   "period": "mid",
+   "digits": [
+    5,
+    5,
+    8
+   ],
+   "source": "nyl_api",
+   "draw_number": 23296,
+   "fetched_at": "2026-08-22T18:58:35+00:00"
   }
  ]
 }
