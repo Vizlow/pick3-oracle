@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-02T07:14:47Z",
+ "updated_at": "2026-09-02T14:42:05Z",
  "scoreboard": {
   "live": {
    "n_draws": 94,
@@ -37,28 +37,6 @@
  "community": {
   "members": [
    {
-    "member": "Andrew1209",
-    "plays": 3,
-    "stake": 1.5,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 0,
-    "net": -1.5,
-    "roi": -1.0,
-    "skill": 0.985
-   },
-   {
-    "member": "JonnyB5775",
-    "plays": 8,
-    "stake": 4.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 0,
-    "net": -4.0,
-    "roi": -1.0,
-    "skill": 0.962
-   },
-   {
     "member": "Ranett",
     "plays": 8,
     "stake": 4.0,
@@ -93,8 +71,8 @@
    },
    {
     "member": "sully16",
-    "plays": 804,
-    "stake": 402.0,
+    "plays": 720,
+    "stake": 360.0,
     "won": 240.0,
     "hits": [
      {
@@ -124,33 +102,27 @@
      }
     ],
     "pair_plays": 0,
-    "net": -162.0,
-    "roi": -0.403,
-    "skill": 1.195
+    "net": -120.0,
+    "roi": -0.3333,
+    "skill": 1.304
    },
    {
     "member": "Gameover44",
-    "plays": 440,
-    "stake": 240.0,
-    "won": 40.0,
-    "hits": [
-     {
-      "draw_id": "2026-08-18-eve",
-      "pick": "145",
-      "result": "415"
-     }
-    ],
+    "plays": 409,
+    "stake": 224.5,
+    "won": 0.0,
+    "hits": [],
     "pair_plays": 40,
-    "net": -200.0,
-    "roi": -0.8333,
-    "skill": 0.539
+    "net": -224.5,
+    "roi": -1.0,
+    "skill": 0.5
    }
   ],
   "total": {
-   "stake": 733.5,
-   "won": 280.0,
-   "net": -453.5,
-   "roi": -0.6183
+   "stake": 670.5,
+   "won": 240.0,
+   "net": -430.5,
+   "roi": -0.6421
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
