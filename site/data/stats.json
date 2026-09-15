@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-15T07:56:30Z",
+ "updated_at": "2026-09-15T15:16:16Z",
  "scoreboard": {
   "live": {
    "n_draws": 120,
@@ -39,7 +39,7 @@
    {
     "member": "Gameover44",
     "plays": 0,
-    "stake": 44.0,
+    "stake": 45.0,
     "won": 50.0,
     "hits": [
      {
@@ -53,10 +53,27 @@
       "result": "991"
      }
     ],
-    "pair_plays": 88,
-    "net": 6.0,
-    "roi": 0.1364,
-    "skill": 1.418
+    "pair_plays": 90,
+    "net": 5.0,
+    "roi": 0.1111,
+    "skill": 1.408
+   },
+   {
+    "member": "LottoIntuitive",
+    "plays": 68,
+    "stake": 37.0,
+    "won": 40.0,
+    "hits": [
+     {
+      "draw_id": "2026-09-14-eve",
+      "pick": "254",
+      "result": "524"
+     }
+    ],
+    "pair_plays": 6,
+    "net": 3.0,
+    "roi": 0.0811,
+    "skill": 1.338
    },
    {
     "member": "nychic",
@@ -136,17 +153,6 @@
     "skill": 0.806
    },
    {
-    "member": "LottoIntuitive",
-    "plays": 48,
-    "stake": 26.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 4,
-    "net": -26.0,
-    "roi": -1.0,
-    "skill": 0.794
-   },
-   {
     "member": "TheseStars",
     "plays": 188,
     "stake": 94.0,
@@ -192,10 +198,10 @@
    }
   ],
   "total": {
-   "stake": 546.0,
-   "won": 210.0,
-   "net": -336.0,
-   "roi": -0.6154
+   "stake": 558.0,
+   "won": 250.0,
+   "net": -308.0,
+   "roi": -0.552
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."

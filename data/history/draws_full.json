@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-15T07:56:32+00:00",
+ "updated_at": "2026-09-15T15:16:23+00:00",
  "draws": [
   {
    "id": "1980-09-02-eve",
@@ -334547,7 +334547,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23342,
-   "fetched_at": "2026-09-14T21:57:11+00:00"
+   "fetched_at": "2026-09-14T21:57:11+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-09-14-eve",
@@ -334560,7 +334561,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23343,
-   "fetched_at": "2026-09-15T07:56:31+00:00"
+   "fetched_at": "2026-09-15T07:56:31+00:00",
+   "reconciled": true
   }
  ]
 }
