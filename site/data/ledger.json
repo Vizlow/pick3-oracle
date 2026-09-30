@@ -26099,6 +26099,180 @@
     }
    },
    "corrected": false
+  },
+  {
+   "draw_id": "2026-09-30-mid",
+   "mode": "live",
+   "lock": {
+    "sha": "89d7c7209e35699938eeee2a983780fad3bc5a2f",
+    "committed_at": "2026-09-30T08:51:17Z",
+    "hours_before_draw": 9.6
+   },
+   "result": [
+    7,
+    2,
+    9
+   ],
+   "prediction": {
+    "draw_id": "2026-09-30-mid",
+    "generated_at": "2026-09-30T08:51:14Z",
+    "picks": [
+     [
+      7,
+      4,
+      6
+     ],
+     [
+      6,
+      2,
+      7
+     ],
+     [
+      9,
+      4,
+      2
+     ],
+     [
+      9,
+      4,
+      8
+     ],
+     [
+      9,
+      4,
+      6
+     ]
+    ],
+    "top_pick": [
+     7,
+     4,
+     6
+    ],
+    "pairs": {
+     "front": [
+      1,
+      5
+     ],
+     "back": [
+      1,
+      8
+     ]
+    },
+    "engine_version": "1.0.0",
+    "explain": {
+     "top_tactics_for_top_pick": [
+      "ttt_mirror",
+      "datesum_key",
+      "rundown_317"
+     ]
+    }
+   },
+   "grade": {
+    "straight_hit": false,
+    "box_hit": {
+     "pick_index": null,
+     "type": null
+    },
+    "top_pick": {
+     "straight": false,
+     "box": false,
+     "one_off": false
+    },
+    "pair_hits": {
+     "front": false,
+     "split": false,
+     "back": false
+    },
+    "any_pick_pairs": {
+     "front": 0,
+     "split": 0,
+     "back": 0
+    }
+   },
+   "pnl": {
+    "all_straight": {
+     "stake": 2.5,
+     "won": 0.0
+    },
+    "all_box": {
+     "stake": 2.5,
+     "won": 0.0
+    },
+    "sb_top": {
+     "stake": 2.5,
+     "won": 0.0
+    },
+    "pairs_mix": {
+     "stake": 2.5,
+     "won": 0.0
+    }
+   },
+   "baseline": {
+    "seed": "270015096180cae4",
+    "random_picks": [
+     [
+      7,
+      5,
+      9
+     ],
+     [
+      8,
+      6,
+      9
+     ],
+     [
+      4,
+      4,
+      2
+     ],
+     [
+      3,
+      1,
+      7
+     ],
+     [
+      9,
+      7,
+      2
+     ]
+    ],
+    "random_pairs": {
+     "front": [
+      6,
+      0
+     ],
+     "back": [
+      0,
+      5
+     ]
+    },
+    "grade": {
+     "straight_hit": false,
+     "box_hit": {
+      "pick_index": 4,
+      "type": "6-way"
+     }
+    },
+    "pnl": {
+     "all_straight": {
+      "stake": 2.5,
+      "won": 0.0
+     },
+     "all_box": {
+      "stake": 2.5,
+      "won": 40.0
+     },
+     "sb_top": {
+      "stake": 2.5,
+      "won": 0.0
+     },
+     "pairs_mix": {
+      "stake": 2.5,
+      "won": 0.0
+     }
+    }
+   },
+   "corrected": false
   }
  ]
 }
