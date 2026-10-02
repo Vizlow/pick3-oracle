@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-02T08:48:21Z",
+ "updated_at": "2026-10-02T16:21:53Z",
  "draws": [
   {
    "id": "2026-03-16-mid",
@@ -5356,7 +5356,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23376,
-   "fetched_at": "2026-10-01T22:50:12+00:00"
+   "fetched_at": "2026-10-01T22:50:12+00:00",
+   "reconciled": true
   },
   {
    "id": "2026-10-01-eve",
@@ -5369,7 +5370,8 @@
    ],
    "source": "nyl_api",
    "draw_number": 23377,
-   "fetched_at": "2026-10-02T08:48:21+00:00"
+   "fetched_at": "2026-10-02T08:48:21+00:00",
+   "reconciled": true
   }
  ]
 }

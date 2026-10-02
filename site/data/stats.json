@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-02T08:48:21Z",
+ "updated_at": "2026-10-02T16:21:53Z",
  "scoreboard": {
   "live": {
    "n_draws": 154,
@@ -92,16 +92,22 @@
     "skill": 0.855
    },
    {
+    "member": "Gameover44",
+    "plays": 4,
+    "stake": 22.0,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 40,
+    "net": -22.0,
+    "roi": -1.0,
+    "skill": 0.82
+   },
+   {
     "member": "LottoIntuitive",
-    "plays": 316,
-    "stake": 168.5,
-    "won": 145.0,
+    "plays": 276,
+    "stake": 146.5,
+    "won": 80.0,
     "hits": [
-     {
-      "draw_id": "2026-09-16-mid",
-      "pick": "258",
-      "result": "258"
-     },
      {
       "draw_id": "2026-09-21-mid",
       "pick": "625",
@@ -111,40 +117,19 @@
       "draw_id": "2026-09-22-eve",
       "pick": "695",
       "result": "956"
-     },
-     {
-      "draw_id": "2026-09-16-mid",
-      "pick": "25x-front",
-      "result": "258"
      }
     ],
-    "pair_plays": 21,
-    "net": -23.5,
-    "roi": -0.1395,
-    "skill": 1.498
-   },
-   {
-    "member": "Gameover44",
-    "plays": 4,
-    "stake": 28.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 52,
-    "net": -28.0,
-    "roi": -1.0,
-    "skill": 0.781
+    "pair_plays": 17,
+    "net": -66.5,
+    "roi": -0.4539,
+    "skill": 1.082
    },
    {
     "member": "sully16",
-    "plays": 796,
-    "stake": 398.0,
-    "won": 160.0,
+    "plays": 696,
+    "stake": 348.0,
+    "won": 120.0,
     "hits": [
-     {
-      "draw_id": "2026-09-16-mid",
-      "pick": "258",
-      "result": "258"
-     },
      {
       "draw_id": "2026-09-19-mid",
       "pick": "296",
@@ -162,16 +147,16 @@
      }
     ],
     "pair_plays": 0,
-    "net": -238.0,
-    "roi": -0.598,
-    "skill": 0.87
+    "net": -228.0,
+    "roi": -0.6552,
+    "skill": 0.781
    }
   ],
   "total": {
-   "stake": 640.5,
-   "won": 305.0,
-   "net": -335.5,
-   "roi": -0.5238
+   "stake": 562.5,
+   "won": 200.0,
+   "net": -362.5,
+   "roi": -0.6444
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
