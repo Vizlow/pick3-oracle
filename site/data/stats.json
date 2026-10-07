@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-07T09:02:38Z",
+ "updated_at": "2026-10-07T17:32:30Z",
  "scoreboard": {
   "live": {
    "n_draws": 164,
@@ -92,6 +92,17 @@
     "skill": 0.926
    },
    {
+    "member": "AIM9",
+    "plays": 38,
+    "stake": 19.0,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -19.0,
+    "roi": -1.0,
+    "skill": 0.84
+   },
+   {
     "member": "Soledad",
     "plays": 42,
     "stake": 23.0,
@@ -148,10 +159,10 @@
    }
   ],
   "total": {
-   "stake": 524.0,
+   "stake": 543.0,
    "won": 80.0,
-   "net": -444.0,
-   "roi": -0.8473
+   "net": -463.0,
+   "roi": -0.8527
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
