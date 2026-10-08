@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-08T09:18:19Z",
+ "updated_at": "2026-10-08T17:35:57Z",
  "scoreboard": {
   "live": {
    "n_draws": 166,
@@ -37,6 +37,28 @@
  "community": {
   "members": [
    {
+    "member": "bankass",
+    "plays": 1,
+    "stake": 0.5,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -0.5,
+    "roi": -1.0,
+    "skill": 0.995
+   },
+   {
+    "member": "Andrew1209",
+    "plays": 1,
+    "stake": 0.5,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -0.5,
+    "roi": -1.0,
+    "skill": 0.995
+   },
+   {
     "member": "Ranett",
     "plays": 4,
     "stake": 2.0,
@@ -72,13 +94,13 @@
    {
     "member": "NY216",
     "plays": 0,
-    "stake": 4.0,
+    "stake": 4.5,
     "won": 0.0,
     "hits": [],
-    "pair_plays": 8,
-    "net": -4.0,
+    "pair_plays": 9,
+    "net": -4.5,
     "roi": -1.0,
-    "skill": 0.962
+    "skill": 0.957
    },
    {
     "member": "DWilks",
@@ -169,10 +191,10 @@
    }
   ],
   "total": {
-   "stake": 542.5,
+   "stake": 544.0,
    "won": 160.0,
-   "net": -382.5,
-   "roi": -0.7051
+   "net": -384.0,
+   "roi": -0.7059
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
