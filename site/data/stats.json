@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-18T07:20:51Z",
+ "updated_at": "2026-10-18T14:09:27Z",
  "scoreboard": {
   "live": {
    "n_draws": 186,
@@ -120,6 +120,17 @@
     "skill": 0.962
    },
    {
+    "member": "Soledad",
+    "plays": 10,
+    "stake": 5.0,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -5.0,
+    "roi": -1.0,
+    "skill": 0.952
+   },
+   {
     "member": "Andrew1209",
     "plays": 12,
     "stake": 6.0,
@@ -133,35 +144,24 @@
    {
     "member": "Juliejulez",
     "plays": 4,
-    "stake": 6.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 8,
-    "net": -6.0,
-    "roi": -1.0,
-    "skill": 0.943
-   },
-   {
-    "member": "Soledad",
-    "plays": 16,
     "stake": 8.0,
     "won": 0.0,
     "hits": [],
-    "pair_plays": 0,
+    "pair_plays": 12,
     "net": -8.0,
     "roi": -1.0,
     "skill": 0.926
    },
    {
     "member": "meriwetherman",
-    "plays": 37,
-    "stake": 18.5,
+    "plays": 40,
+    "stake": 20.0,
     "won": 0.0,
     "hits": [],
     "pair_plays": 0,
-    "net": -18.5,
+    "net": -20.0,
     "roi": -1.0,
-    "skill": 0.844
+    "skill": 0.833
    },
    {
     "member": "EmpressTi",
@@ -186,20 +186,9 @@
     "skill": 0.61
    },
    {
-    "member": "Gameover44",
-    "plays": 134,
-    "stake": 73.0,
-    "won": 0.0,
-    "hits": [],
-    "pair_plays": 12,
-    "net": -73.0,
-    "roi": -1.0,
-    "skill": 0.578
-   },
-   {
     "member": "sully16",
-    "plays": 1088,
-    "stake": 544.0,
+    "plays": 1024,
+    "stake": 512.0,
     "won": 440.0,
     "hits": [
      {
@@ -229,16 +218,27 @@
      }
     ],
     "pair_plays": 0,
-    "net": -104.0,
-    "roi": -0.1912,
-    "skill": 1.579
+    "net": -72.0,
+    "roi": -0.1406,
+    "skill": 1.661
+   },
+   {
+    "member": "Gameover44",
+    "plays": 134,
+    "stake": 73.0,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 12,
+    "net": -73.0,
+    "roi": -1.0,
+    "skill": 0.578
    }
   ],
   "total": {
-   "stake": 776.5,
+   "stake": 745.0,
    "won": 480.0,
-   "net": -296.5,
-   "roi": -0.3818
+   "net": -265.0,
+   "roi": -0.3557
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
