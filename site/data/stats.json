@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-24T07:30:26Z",
+ "updated_at": "2026-10-24T14:07:09Z",
  "scoreboard": {
   "live": {
    "n_draws": 198,
@@ -82,7 +82,7 @@
     "skill": 0.98
    },
    {
-    "member": "Andrew1209",
+    "member": "Ranett",
     "plays": 8,
     "stake": 4.0,
     "won": 0.0,
@@ -93,15 +93,15 @@
     "skill": 0.962
    },
    {
-    "member": "Ranett",
-    "plays": 8,
-    "stake": 4.0,
+    "member": "Andrew1209",
+    "plays": 9,
+    "stake": 4.5,
     "won": 0.0,
     "hits": [],
     "pair_plays": 0,
-    "net": -4.0,
+    "net": -4.5,
     "roi": -1.0,
-    "skill": 0.962
+    "skill": 0.957
    },
    {
     "member": "Soledad",
@@ -225,10 +225,10 @@
    }
   ],
   "total": {
-   "stake": 763.0,
+   "stake": 763.5,
    "won": 480.0,
-   "net": -283.0,
-   "roi": -0.3709
+   "net": -283.5,
+   "roi": -0.3713
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
