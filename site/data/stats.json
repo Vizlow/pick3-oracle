@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26T07:59:38Z",
+ "updated_at": "2026-10-26T16:59:31Z",
  "scoreboard": {
   "live": {
    "n_draws": 202,
@@ -69,6 +69,17 @@
     "net": 1.0,
     "roi": 0.0256,
     "skill": 1.319
+   },
+   {
+    "member": "WISHYOULUCK",
+    "plays": 2,
+    "stake": 1.0,
+    "won": 0.0,
+    "hits": [],
+    "pair_plays": 0,
+    "net": -1.0,
+    "roi": -1.0,
+    "skill": 0.99
    },
    {
     "member": "Seven777",
@@ -240,10 +251,10 @@
    }
   ],
   "total": {
-   "stake": 799.0,
+   "stake": 800.0,
    "won": 435.0,
-   "net": -364.0,
-   "roi": -0.4556
+   "net": -365.0,
+   "roi": -0.4562
   },
   "random_ev_roi": -0.52,
   "note": "Every posted pick graded $0.50 box; front/back pair calls $0.50. Attributed to draws within 48h after posting."
