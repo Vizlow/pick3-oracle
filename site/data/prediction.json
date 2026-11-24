@@ -1,12 +1,7 @@
 {
  "draw_id": "2026-11-24-mid",
- "generated_at": "2026-11-24T04:00:37Z",
+ "generated_at": "2026-11-24T20:52:24Z",
  "picks": [
-  [
-   0,
-   5,
-   2
-  ],
   [
    8,
    3,
@@ -18,20 +13,25 @@
    5
   ],
   [
-   5,
    8,
-   7
+   7,
+   5
   ],
   [
-   6,
+   2,
    3,
    5
+  ],
+  [
+   0,
+   5,
+   2
   ]
  ],
  "top_pick": [
-  0,
-  5,
-  2
+  8,
+  3,
+  5
  ],
  "pairs": {
   "front": [
@@ -46,8 +46,8 @@
  "engine_version": "1.0.0",
  "explain": {
   "top_tactics_for_top_pick": [
-   "due_digits",
    "pair_due",
+   "due_digits",
    "datesum_key"
   ]
  }
